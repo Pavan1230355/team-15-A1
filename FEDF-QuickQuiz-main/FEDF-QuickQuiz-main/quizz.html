@@ -338,11 +338,13 @@ function showQuestion(){
   }else if(q.type==='fill'){
     const input=document.createElement('input');
     input.type='text';
-    input.oninput=(e)=>selectedAnswer=e.target.value;
+    // keep selectedAnswer in sync as the user types
+    input.oninput=(e)=>selectedAnswer=(e.target.value||'');
     optionsContainer.appendChild(input);
     const submit=document.createElement('button');
     submit.textContent='Submit';
-    submit.onclick=checkAnswer;
+    // on click capture the current input value and then check the answer
+    submit.onclick=()=>{ selectedAnswer = (input.value || ''); checkAnswer(); };
     optionsContainer.appendChild(submit);
   }else if(q.type==='tf'){
     ['True','False'].forEach(opt=>{
@@ -368,10 +370,18 @@ function selectAnswer(opt,btn){
   checkAnswer();
 }
 function checkAnswer(){
-  const q=currentQuiz[currentIndex];
-  if((q.type==='mcq'||q.type==='tf')&&selectedAnswer===q.answer)score++;
-  if(q.type==='fill'&&selectedAnswer.trim().toLowerCase()===q.answer.toLowerCase())score++;
-  nextBtn.style.display='block';
+  const q = currentQuiz[currentIndex] || {};
+  const userAns = (selectedAnswer || '').toString();
+  const correct = (q.answer || '').toString();
+  // compare for mcq / true-false
+  if ((q.type === 'mcq' || q.type === 'tf') && userAns === correct) {
+    score++;
+  }
+  // compare for fill-in-the-blank (case-insensitive, trimmed)
+  if (q.type === 'fill' && userAns.trim().toLowerCase() === correct.trim().toLowerCase()) {
+    score++;
+  }
+  nextBtn.style.display = 'block';
 }
 
 function showResult(){
