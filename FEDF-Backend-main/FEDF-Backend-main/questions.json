@@ -1,0 +1,3302 @@
+[
+  {
+    "course": "CSS",
+    "question": "What does CSS stand for?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style System",
+      "Creative Style Sheet",
+      "Colorful Style System"
+    ],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    "course": "CSS",
+    "question": "Which tag is used to link CSS in HTML?",
+    "options": [
+      "<style>",
+      "<css>",
+      "<link>",
+      "<script>"
+    ],
+    "answer": "<link>"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property is used to change text color?",
+    "options": [
+      "font-color",
+      "text-color",
+      "color",
+      "foreground"
+    ],
+    "answer": "color"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property changes background color?",
+    "options": [
+      "bgcolor",
+      "background-color",
+      "color",
+      "background"
+    ],
+    "answer": "background-color"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property controls the font size?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size",
+      "font-height"
+    ],
+    "answer": "font-size"
+  },
+  {
+    "course": "CSS",
+    "question": "Which CSS unit is fixed?",
+    "options": [
+      "px",
+      "em",
+      "rem",
+      "%"
+    ],
+    "answer": "px"
+  },
+  {
+    "course": "CSS",
+    "question": "What is the default CSS display value for a <div>?",
+    "options": [
+      "inline",
+      "block",
+      "flex",
+      "inline-block"
+    ],
+    "answer": "block"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property controls spacing inside borders?",
+    "options": [
+      "padding",
+      "margin",
+      "gap",
+      "border-spacing"
+    ],
+    "answer": "padding"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property adds space outside an element?",
+    "options": [
+      "margin",
+      "padding",
+      "offset",
+      "gap"
+    ],
+    "answer": "margin"
+  },
+  {
+    "course": "CSS",
+    "question": "Which CSS property sets text alignment?",
+    "options": [
+      "align",
+      "text-align",
+      "justify",
+      "font-align"
+    ],
+    "answer": "text-align"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets the style of the font?",
+    "options": [
+      "font-style",
+      "font-weight",
+      "font-type",
+      "font-family"
+    ],
+    "answer": "font-style"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property makes text bold?",
+    "options": [
+      "font-style",
+      "font-weight",
+      "text-bold",
+      "weight"
+    ],
+    "answer": "font-weight"
+  },
+  {
+    "course": "CSS",
+    "question": "Which selector targets all elements?",
+    "options": [
+      "*",
+      "#",
+      ".",
+      "all"
+    ],
+    "answer": "*"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets border thickness?",
+    "options": [
+      "border-width",
+      "border-size",
+      "line-size",
+      "outline-width"
+    ],
+    "answer": "border-width"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets corner rounding?",
+    "options": [
+      "corner",
+      "radius",
+      "border-radius",
+      "curve"
+    ],
+    "answer": "border-radius"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property controls text decoration?",
+    "options": [
+      "text-style",
+      "text-decoration",
+      "decoration",
+      "underline-style"
+    ],
+    "answer": "text-decoration"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property makes text uppercase?",
+    "options": [
+      "text-transform",
+      "text-case",
+      "uppercase",
+      "font-case"
+    ],
+    "answer": "text-transform"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property controls line spacing?",
+    "options": [
+      "letter-spacing",
+      "line-height",
+      "spacing",
+      "line-size"
+    ],
+    "answer": "line-height"
+  },
+  {
+    "course": "CSS",
+    "question": "Which pseudo-class selects a hovered element?",
+    "options": [
+      ":hover",
+      ":active",
+      ":focus",
+      ":click"
+    ],
+    "answer": ":hover"
+  },
+  {
+    "course": "CSS",
+    "question": "Which pseudo-element styles first letter?",
+    "options": [
+      "::first-letter",
+      "::letter",
+      ":first-letter",
+      "::start"
+    ],
+    "answer": "::first-letter"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets shadow on text?",
+    "options": [
+      "text-shadow",
+      "shadow-text",
+      "font-shadow",
+      "shadow"
+    ],
+    "answer": "text-shadow"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property hides an element but keeps space?",
+    "options": [
+      "display: none",
+      "visibility: hidden",
+      "opacity: 0",
+      "hidden: true"
+    ],
+    "answer": "visibility: hidden"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property makes element invisible and removes space?",
+    "options": [
+      "opacity: 0",
+      "display: none",
+      "visibility: collapse",
+      "remove"
+    ],
+    "answer": "display: none"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property controls overflow content?",
+    "options": [
+      "overflow",
+      "scroll",
+      "clip",
+      "hidden"
+    ],
+    "answer": "overflow"
+  },
+  {
+    "course": "CSS",
+    "question": "Which function rotates an element?",
+    "options": [
+      "rotate()",
+      "turn()",
+      "angle()",
+      "skew()"
+    ],
+    "answer": "rotate()"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property controls element stacking?",
+    "options": [
+      "z-index",
+      "stack",
+      "layer",
+      "order"
+    ],
+    "answer": "z-index"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets underline thickness?",
+    "options": [
+      "text-decoration-thickness",
+      "underline-size",
+      "border-bottom",
+      "font-weight"
+    ],
+    "answer": "text-decoration-thickness"
+  },
+  {
+    "course": "CSS",
+    "question": "Which unit equals root font-size?",
+    "options": [
+      "rem",
+      "em",
+      "px",
+      "vh"
+    ],
+    "answer": "rem"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property defines flex container?",
+    "options": [
+      "display: flex",
+      "display: block",
+      "flex-mode",
+      "flex-container"
+    ],
+    "answer": "display: flex"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property aligns items horizontally in flex?",
+    "options": [
+      "justify-content",
+      "align-items",
+      "flex-align",
+      "direction"
+    ],
+    "answer": "justify-content"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property aligns items vertically in flex?",
+    "options": [
+      "align-items",
+      "justify-content",
+      "flex-align",
+      "center-items"
+    ],
+    "answer": "align-items"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property changes direction in flexbox?",
+    "options": [
+      "flex-direction",
+      "direction",
+      "rotation",
+      "justify-items"
+    ],
+    "answer": "flex-direction"
+  },
+  {
+    "course": "CSS",
+    "question": "Which value reverses flex direction horizontally?",
+    "options": [
+      "row-reverse",
+      "reverse-row",
+      "column-reverse",
+      "row-back"
+    ],
+    "answer": "row-reverse"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property allows wrapping in flexbox?",
+    "options": [
+      "flex-wrap",
+      "wrap",
+      "flex-flow",
+      "overflow"
+    ],
+    "answer": "flex-wrap"
+  },
+  {
+    "course": "CSS",
+    "question": "Which CSS display creates grid layout?",
+    "options": [
+      "grid",
+      "flex",
+      "block",
+      "inline-grid"
+    ],
+    "answer": "grid"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets grid rows?",
+    "options": [
+      "grid-template-rows",
+      "grid-rows",
+      "grid-structure",
+      "rows-template"
+    ],
+    "answer": "grid-template-rows"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property controls column gap?",
+    "options": [
+      "column-gap",
+      "gap",
+      "grid-gap",
+      "spacing"
+    ],
+    "answer": "column-gap"
+  },
+  {
+    "course": "CSS",
+    "question": "Which CSS property controls cursor style?",
+    "options": [
+      "cursor",
+      "pointer",
+      "mouse",
+      "hover"
+    ],
+    "answer": "cursor"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets element opacity?",
+    "options": [
+      "opacity",
+      "visibility",
+      "alpha",
+      "filter"
+    ],
+    "answer": "opacity"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets animation duration?",
+    "options": [
+      "animation-duration",
+      "duration",
+      "time",
+      "transition-duration"
+    ],
+    "answer": "animation-duration"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property repeats animation forever?",
+    "options": [
+      "animation-iteration-count: infinite",
+      "repeat: true",
+      "loop: yes",
+      "animation-loop"
+    ],
+    "answer": "animation-iteration-count: infinite"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets shadow to element box?",
+    "options": [
+      "box-shadow",
+      "shadow-box",
+      "element-shadow",
+      "border-shadow"
+    ],
+    "answer": "box-shadow"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets width of element?",
+    "options": [
+      "width",
+      "size",
+      "block-size",
+      "span"
+    ],
+    "answer": "width"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets height?",
+    "options": [
+      "height",
+      "length",
+      "width",
+      "block-height"
+    ],
+    "answer": "height"
+  },
+  {
+    "course": "CSS",
+    "question": "Which value hides overflow scrollbars?",
+    "options": [
+      "overflow: hidden",
+      "display: none",
+      "visibility: none",
+      "scroll: off"
+    ],
+    "answer": "overflow: hidden"
+  },
+  {
+    "course": "CSS",
+    "question": "Which value adds scrollbars when needed?",
+    "options": [
+      "overflow: auto",
+      "overflow: scroll",
+      "overflow: visible",
+      "overflow: hidden"
+    ],
+    "answer": "overflow: auto"
+  },
+  {
+    "course": "CSS",
+    "question": "Which selector refers to class?",
+    "options": [
+      ".className",
+      "#className",
+      "class()",
+      "$class"
+    ],
+    "answer": ".className"
+  },
+  {
+    "course": "CSS",
+    "question": "Which selector refers to id?",
+    "options": [
+      "#idName",
+      ".idName",
+      "id()",
+      "$id"
+    ],
+    "answer": "#idName"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property sets background image?",
+    "options": [
+      "background-image",
+      "image-background",
+      "bg-image",
+      "image-set"
+    ],
+    "answer": "background-image"
+  },
+  {
+    "course": "CSS",
+    "question": "Which property keeps background fixed?",
+    "options": [
+      "background-attachment: fixed",
+      "background-stick",
+      "image-lock",
+      "background-static"
+    ],
+    "answer": "background-attachment: fixed"
+  },
+  {
+    "course": "MySQL",
+    "question": "MySQL is a ______ database.",
+    "options": [
+      "NoSQL",
+      "Relational",
+      "Graph",
+      "File-based"
+    ],
+    "answer": "Relational"
+  },
+  {
+    "course": "MySQL",
+    "question": "MySQL default port:",
+    "options": [
+      "1521",
+      "3306",
+      "27017",
+      "8080"
+    ],
+    "answer": "3306"
+  },
+  {
+    "course": "MySQL",
+    "question": "SQL stands for:",
+    "options": [
+      "Structured Query Language",
+      "Simple Query Language",
+      "System Query Logic",
+      "Server Query Link"
+    ],
+    "answer": "Structured Query Language"
+  },
+  {
+    "course": "MySQL",
+    "question": "Which stores data?",
+    "options": [
+      "Table",
+      "Trigger",
+      "View",
+      "Function"
+    ],
+    "answer": "Table"
+  },
+  {
+    "course": "MySQL",
+    "question": "Choose valid DDL command:",
+    "options": [
+      "SELECT",
+      "INSERT",
+      "CREATE",
+      "UPDATE"
+    ],
+    "answer": "CREATE"
+  },
+  {
+    "course": "MySQL",
+    "question": "DML stands for:",
+    "options": [
+      "Data Machine Language",
+      "Data Manipulation Language",
+      "Data Management Layer",
+      "Data Migration Logic"
+    ],
+    "answer": "Data Manipulation Language"
+  },
+  {
+    "course": "MySQL",
+    "question": "DROP removes:",
+    "options": [
+      "Row",
+      "Table",
+      "Column",
+      "Constraint only"
+    ],
+    "answer": "Table"
+  },
+  {
+    "course": "MySQL",
+    "question": "DELETE removes:",
+    "options": [
+      "Database",
+      "Table",
+      "Selected rows",
+      "Column name"
+    ],
+    "answer": "Selected rows"
+  },
+  {
+    "course": "MySQL",
+    "question": "TRUNCATE does what?",
+    "options": [
+      "Deletes structure",
+      "Deletes all rows, keeps structure",
+      "Deletes one row",
+      "Creates table"
+    ],
+    "answer": "Deletes all rows, keeps structure"
+  },
+  {
+    "course": "MySQL",
+    "question": "SELECT * FROM students; means:",
+    "options": [
+      "Select only ID",
+      "Select all rows & columns",
+      "Delete table",
+      "Sort results"
+    ],
+    "answer": "Select all rows & columns"
+  },
+  {
+    "course": "MySQL",
+    "question": "Primary key is:",
+    "options": [
+      "Can be duplicate",
+      "Always unique",
+      "Always null",
+      "Optional unique"
+    ],
+    "answer": "Always unique"
+  },
+  {
+    "course": "MySQL",
+    "question": "Foreign key links:",
+    "options": [
+      "Two databases",
+      "Two tables",
+      "Table to server",
+      "Table to HTML"
+    ],
+    "answer": "Two tables"
+  },
+  {
+    "course": "MySQL",
+    "question": "NOT NULL means:",
+    "options": [
+      "Value cannot be empty",
+      "Value can be null",
+      "Auto increment",
+      "Optional key"
+    ],
+    "answer": "Value cannot be empty"
+  },
+  {
+    "course": "MySQL",
+    "question": "AUTO_INCREMENT used for:",
+    "options": [
+      "Names",
+      "IDs",
+      "Dates",
+      "Passwords"
+    ],
+    "answer": "IDs"
+  },
+  {
+    "course": "MySQL",
+    "question": "Which operator for pattern?",
+    "options": [
+      "=",
+      "LIKE",
+      "MATCH",
+      "EQUALS"
+    ],
+    "answer": "LIKE"
+  },
+  {
+    "course": "MySQL",
+    "question": "Wildcard % means:",
+    "options": [
+      "One character",
+      "Zero or more characters",
+      "Numbers only",
+      "NULL values"
+    ],
+    "answer": "Zero or more characters"
+  },
+  {
+    "course": "MySQL",
+    "question": "Which sorts ascending?",
+    "options": [
+      "ORDER BY column ASC",
+      "SORT column",
+      "ORDER column",
+      "SORT BY ASC"
+    ],
+    "answer": "ORDER BY column ASC"
+  },
+  {
+    "course": "MySQL",
+    "question": "To avoid duplicates:",
+    "options": [
+      "UNIQUE",
+      "DISTINCT",
+      "NODUP",
+      "UNIQUE_ONLY"
+    ],
+    "answer": "DISTINCT"
+  },
+  {
+    "course": "MySQL",
+    "question": "GROUP BY used for:",
+    "options": [
+      "Inserting rows",
+      "Grouping rows for functions",
+      "Sorting",
+      "Dropping table"
+    ],
+    "answer": "Grouping rows for functions"
+  },
+  {
+    "course": "MySQL",
+    "question": "HAVING used with:",
+    "options": [
+      "SELECT only",
+      "Aggregate functions",
+      "DROP",
+      "CREATE"
+    ],
+    "answer": "Aggregate functions"
+  },
+  {
+    "course": "MySQL",
+    "question": "SHOW DATABASES; displays:",
+    "options": [
+      "Tables",
+      "All DBs",
+      "Views",
+      "Users"
+    ],
+    "answer": "All DBs"
+  },
+  {
+    "course": "MySQL",
+    "question": "To use a DB:",
+    "options": [
+      "LOAD db",
+      "START db",
+      "USE dbname",
+      "DB dbname"
+    ],
+    "answer": "USE dbname"
+  },
+  {
+    "course": "MySQL",
+    "question": "Show tables:",
+    "options": [
+      "LIST TABLES",
+      "SHOW TABLES",
+      "TABLES()",
+      "ALL TABLES"
+    ],
+    "answer": "SHOW TABLES"
+  },
+  {
+    "course": "MySQL",
+    "question": "Create table keyword:",
+    "options": [
+      "MAKE TABLE",
+      "TABLE NEW",
+      "CREATE TABLE",
+      "INSERT TABLE"
+    ],
+    "answer": "CREATE TABLE"
+  },
+  {
+    "course": "MySQL",
+    "question": "AND operator returns true when:",
+    "options": [
+      "All conditions true",
+      "One condition true",
+      "None true",
+      "Opposite value"
+    ],
+    "answer": "All conditions true"
+  },
+  {
+    "course": "MySQL",
+    "question": "OR operator returns true when:",
+    "options": [
+      "All true",
+      "Any one true",
+      "None true",
+      "False only"
+    ],
+    "answer": "Any one true"
+  },
+  {
+    "course": "MySQL",
+    "question": "COUNT() is:",
+    "options": [
+      "DDL",
+      "Arithmetic",
+      "Aggregate function",
+      "DCL"
+    ],
+    "answer": "Aggregate function"
+  },
+  {
+    "course": "MySQL",
+    "question": "AVG() is used to:",
+    "options": [
+      "Add values",
+      "Return average",
+      "Count values",
+      "Filter rows"
+    ],
+    "answer": "Return average"
+  },
+  {
+    "course": "MySQL",
+    "question": "MIN() returns:",
+    "options": [
+      "Largest value",
+      "Smallest value",
+      "Middle value",
+      "Average"
+    ],
+    "answer": "Smallest value"
+  },
+  {
+    "course": "MySQL",
+    "question": "Which constraint gives unique + not null?",
+    "options": [
+      "UNIQUE",
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "CHECK"
+    ],
+    "answer": "PRIMARY KEY"
+  },
+  {
+    "course": "MySQL",
+    "question": "Referential integrity maintained by:",
+    "options": [
+      "Index",
+      "Foreign key",
+      "Primary key",
+      "View"
+    ],
+    "answer": "Foreign key"
+  },
+  {
+    "course": "MySQL",
+    "question": "MySQL default engine:",
+    "options": [
+      "InnoDB",
+      "MyISAM",
+      "SQLite",
+      "Oracle"
+    ],
+    "answer": "InnoDB"
+  },
+  {
+    "course": "MySQL",
+    "question": "Which backup utility?",
+    "options": [
+      "mysqlcopy",
+      "mysqldump",
+      "mysqlsave",
+      "dumpdb"
+    ],
+    "answer": "mysqldump"
+  },
+  {
+    "course": "MySQL",
+    "question": "Comment in SQL:",
+    "options": [
+      "//",
+      "#",
+      "/* */",
+      "Both B & C"
+    ],
+    "answer": "Both B & C"
+  },
+  {
+    "course": "MySQL",
+    "question": "LIMIT used for:",
+    "options": [
+      "Filtering values",
+      "Limit rows returned",
+      "Sorting",
+      "Backup"
+    ],
+    "answer": "Limit rows returned"
+  },
+  {
+    "course": "MySQL",
+    "question": "UNIQUE constraint allows:",
+    "options": [
+      "Duplicates",
+      "One NULL value",
+      "Only NULLs",
+      "Many NULLs"
+    ],
+    "answer": "One NULL value"
+  },
+  {
+    "course": "MySQL",
+    "question": "Rename table:",
+    "options": [
+      "CHANGE TABLE",
+      "RENAME TABLE",
+      "NEW TABLE",
+      "MODIFY TABLE"
+    ],
+    "answer": "RENAME TABLE"
+  },
+  {
+    "course": "MySQL",
+    "question": "Which joins common rows only?",
+    "options": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL JOIN"
+    ],
+    "answer": "INNER JOIN"
+  },
+  {
+    "course": "MySQL",
+    "question": "LEFT JOIN returns:",
+    "options": [
+      "Left table all rows",
+      "Right table all rows",
+      "Only matched",
+      "None"
+    ],
+    "answer": "Left table all rows"
+  },
+  {
+    "course": "MySQL",
+    "question": "FULL JOIN gives:",
+    "options": [
+      "Only left",
+      "Only right",
+      "Both sides",
+      "Only unmatched"
+    ],
+    "answer": "Both sides"
+  },
+  {
+    "course": "MySQL",
+    "question": "ALTER TABLE used to:",
+    "options": [
+      "Modify structure",
+      "Insert rows",
+      "Select rows",
+      "Backup DB"
+    ],
+    "answer": "Modify structure"
+  },
+  {
+    "course": "MySQL",
+    "question": "WHERE used for:",
+    "options": [
+      "Filtering rows",
+      "Creating table",
+      "Dropping DB",
+      "Joining tables"
+    ],
+    "answer": "Filtering rows"
+  },
+  {
+    "course": "MySQL",
+    "question": "SQL injection is:",
+    "options": [
+      "Security attack",
+      "Backup method",
+      "Indexing technique",
+      "Query tool"
+    ],
+    "answer": "Security attack"
+  },
+  {
+    "course": "MySQL",
+    "question": "Indexed column improves:",
+    "options": [
+      "Speed",
+      "Backup",
+      "Insert only",
+      "None"
+    ],
+    "answer": "Speed"
+  },
+  {
+    "course": "MySQL",
+    "question": "CHAR vs VARCHAR?",
+    "options": [
+      "CHAR fixed, VARCHAR variable",
+      "CHAR variable, VARCHAR fixed",
+      "Both same",
+      "CHAR numeric"
+    ],
+    "answer": "CHAR fixed, VARCHAR variable"
+  },
+  {
+    "course": "MySQL",
+    "question": "Current date function:",
+    "options": [
+      "TODAY()",
+      "GETDATE()",
+      "CURRENT_DATE()",
+      "NOWDAY()"
+    ],
+    "answer": "CURRENT_DATE()"
+  },
+  {
+    "course": "MySQL",
+    "question": "Subquery means:",
+    "options": [
+      "Query inside query",
+      "Query failed",
+      "Query backup",
+      "New database"
+    ],
+    "answer": "Query inside query"
+  },
+  {
+    "course": "MySQL",
+    "question": "DROP DATABASE removes:",
+    "options": [
+      "Tables only",
+      "Entire DB",
+      "One table",
+      "One row"
+    ],
+    "answer": "Entire DB"
+  },
+  {
+    "course": "MySQL",
+    "question": "Export table to CSV:",
+    "options": [
+      "SELECT … INTO OUTFILE",
+      "EXPORT TABLE",
+      "SAVE CSV",
+      "OUTFILE ONLY"
+    ],
+    "answer": "SELECT … INTO OUTFILE"
+  },
+  {
+    "course": "MySQL",
+    "question": "MySQL is written in:",
+    "options": [
+      "Java",
+      "C/C++",
+      "Python",
+      "PHP"
+    ],
+    "answer": "C/C++"
+  },
+  {
+    "course": "HTML",
+    "question": "What does HTML stand for?",
+    "options": [
+      "HyperText Markdown Language",
+      "HyperText Markup Language",
+      "Hyperlink and Text Markup Language",
+      "Hyper Transfer Markup Language"
+    ],
+    "answer": "HyperText Markup Language"
+  },
+  {
+    "course": "HTML",
+    "question": "Which HTML element is used to define the largest heading?",
+    "options": [
+      "<h6>",
+      "<h3>",
+      "<h1>",
+      "<header>"
+    ],
+    "answer": "<h1>"
+  },
+  {
+    "course": "HTML",
+    "question": "Which tag is used to create a paragraph?",
+    "options": [
+      "<p>",
+      "<para>",
+      "<text>",
+      "<paragraph>"
+    ],
+    "answer": "<p>"
+  },
+  {
+    "course": "HTML",
+    "question": "Which attribute is used to specify an alternate text for an image?",
+    "options": [
+      "title",
+      "alt",
+      "src",
+      "caption"
+    ],
+    "answer": "alt"
+  },
+  {
+    "course": "HTML",
+    "question": "Which HTML element is used to create a hyperlink?",
+    "options": [
+      "<link>",
+      "<a>",
+      "<href>",
+      "<anchor>"
+    ],
+    "answer": "<a>"
+  },
+  {
+    "course": "HTML",
+    "question": "Which attribute specifies the location of an external CSS file?",
+    "options": [
+      "href in <link>",
+      "src in <style>",
+      "link in <css>",
+      "file in <link>"
+    ],
+    "answer": "href in <link>"
+  },
+  {
+    "course": "HTML",
+    "question": "Where does the <meta charset=\"UTF-8\"> element belong?",
+    "options": [
+      "In <body>",
+      "In <head>",
+      "Before <!DOCTYPE html>",
+      "After </html>"
+    ],
+    "answer": "In <head>"
+  },
+  {
+    "course": "HTML",
+    "question": "Which element is used to define the navigation links?",
+    "options": [
+      "<nav>",
+      "<menu>",
+      "<navigation>",
+      "<links>"
+    ],
+    "answer": "<nav>"
+  },
+  {
+    "course": "HTML",
+    "question": "Which tag is used to create an ordered list?",
+    "options": [
+      "<ul>",
+      "<list>",
+      "<ol>",
+      "<li>"
+    ],
+    "answer": "<ol>"
+  },
+  {
+    "course": "HTML",
+    "question": "Which element is appropriate for self-contained content that can be reused?",
+    "options": [
+      "<div>",
+      "<span>",
+      "<article>",
+      "<section>"
+    ],
+    "answer": "<article>"
+  },
+  {
+    "course": "HTML",
+    "question": "Correct HTML element for a line break?",
+    "options": [
+      "<br>",
+      "<break>",
+      "<lb>",
+      "<newline>"
+    ],
+    "answer": "<br>"
+  },
+  {
+    "course": "HTML",
+    "question": "Attribute to open link in new tab?",
+    "options": [
+      "target=\"_blank\"",
+      "window=\"new\"",
+      "rel=\"noopener\"",
+      "open=\"new\""
+    ],
+    "answer": "target=\"_blank\""
+  },
+  {
+    "course": "HTML",
+    "question": "Which tag defines an unordered list?",
+    "options": [
+      "<ul>",
+      "<ol>",
+      "<li>",
+      "<list>"
+    ],
+    "answer": "<ul>"
+  },
+  {
+    "course": "HTML",
+    "question": "How to insert a comment in HTML?",
+    "options": [
+      "/* comment */",
+      "// comment",
+      "<!-- comment -->",
+      "# comment"
+    ],
+    "answer": "<!-- comment -->"
+  },
+  {
+    "course": "HTML",
+    "question": "Which element groups footer content?",
+    "options": [
+      "<end>",
+      "<footer>",
+      "<bottom>",
+      "<section-footer>"
+    ],
+    "answer": "<footer>"
+  },
+  {
+    "course": "HTML",
+    "question": "Attribute for tooltip text?",
+    "options": [
+      "info",
+      "title",
+      "tooltip",
+      "alt"
+    ],
+    "answer": "title"
+  },
+  {
+    "course": "HTML",
+    "question": "Tag to embed audio in HTML5?",
+    "options": [
+      "<sound>",
+      "<audio>",
+      "<music>",
+      "<media>"
+    ],
+    "answer": "<audio>"
+  },
+  {
+    "course": "HTML",
+    "question": "Correct password input?",
+    "options": [
+      "<input type=\"text\" name=\"pwd\">",
+      "<input type=\"password\" name=\"pwd\">",
+      "<password>",
+      "<input password>"
+    ],
+    "answer": "<input type=\"password\" name=\"pwd\">"
+  },
+  {
+    "course": "HTML",
+    "question": "Which <form> attribute sends form data to server?",
+    "options": [
+      "action",
+      "method",
+      "submit",
+      "target"
+    ],
+    "answer": "action"
+  },
+  {
+    "course": "HTML",
+    "question": "Which method sends form data as URL parameters?",
+    "options": [
+      "POST",
+      "GET",
+      "SEND",
+      "PUT"
+    ],
+    "answer": "GET"
+  },
+  {
+    "course": "HTML",
+    "question": "HTML tag for table row?",
+    "options": [
+      "<td>",
+      "<th>",
+      "<tr>",
+      "<row>"
+    ],
+    "answer": "<tr>"
+  },
+  {
+    "course": "HTML",
+    "question": "Purpose of <thead> in a table?",
+    "options": [
+      "Holds the table footer",
+      "Contains the table body rows",
+      "Groups header content",
+      "Specifies table styling"
+    ],
+    "answer": "Groups header content"
+  },
+  {
+    "course": "HTML",
+    "question": "Required attribute for <img> tag?",
+    "options": [
+      "href",
+      "src",
+      "link",
+      "path"
+    ],
+    "answer": "src"
+  },
+  {
+    "course": "HTML",
+    "question": "Element for emphasized text?",
+    "options": [
+      "<strong>",
+      "<b>",
+      "<em>",
+      "<i>"
+    ],
+    "answer": "<em>"
+  },
+  {
+    "course": "HTML",
+    "question": "Element defining a section?",
+    "options": [
+      "<section>",
+      "<group>",
+      "<div>",
+      "<article>"
+    ],
+    "answer": "<section>"
+  },
+  {
+    "course": "HTML",
+    "question": "Purpose of <!DOCTYPE html>?",
+    "options": [
+      "Link to CSS",
+      "Use HTML5 standards",
+      "Include JavaScript",
+      "Define title"
+    ],
+    "answer": "Use HTML5 standards"
+  },
+  {
+    "course": "HTML",
+    "question": "Element for strong importance text?",
+    "options": [
+      "<em>",
+      "<strong>",
+      "<b>",
+      "<i>"
+    ],
+    "answer": "<strong>"
+  },
+  {
+    "course": "HTML",
+    "question": "How to create a drop-down list?",
+    "options": [
+      "<select> with <option>",
+      "<dropdown> with <item>",
+      "<listbox> with <option>",
+      "<menu> with <option>"
+    ],
+    "answer": "<select> with <option>"
+  },
+  {
+    "course": "HTML",
+    "question": "Attribute for link security when using target=\"_blank\"?",
+    "options": [
+      "hreflang",
+      "rel",
+      "ref",
+      "role"
+    ],
+    "answer": "rel"
+  },
+  {
+    "course": "HTML",
+    "question": "Tag to embed external webpage?",
+    "options": [
+      "<embed>",
+      "<iframe>",
+      "<object>",
+      "<frame>"
+    ],
+    "answer": "<iframe>"
+  },
+  {
+    "course": "HTML",
+    "question": "HTML element to draw graphics via JS?",
+    "options": [
+      "<svg>",
+      "<canvas>",
+      "<graph>",
+      "<draw>"
+    ],
+    "answer": "<canvas>"
+  },
+  {
+    "course": "HTML",
+    "question": "What is semantic HTML?",
+    "options": [
+      "HTML only for styling",
+      "Tags describing meaning",
+      "Embedding CSS",
+      "Scripts generating HTML"
+    ],
+    "answer": "Tags describing meaning"
+  },
+  {
+    "course": "HTML",
+    "question": "Attribute to make input required?",
+    "options": [
+      "mandatory",
+      "validate",
+      "required",
+      "needed"
+    ],
+    "answer": "required"
+  },
+  {
+    "course": "HTML",
+    "question": "Inline text container?",
+    "options": [
+      "<div>",
+      "<span>",
+      "<p>",
+      "<section>"
+    ],
+    "answer": "<span>"
+  },
+  {
+    "course": "HTML",
+    "question": "Best for vector graphics?",
+    "options": [
+      "<image>",
+      "<svg>",
+      "<vector>",
+      "<canvas>"
+    ],
+    "answer": "<svg>"
+  },
+  {
+    "course": "HTML",
+    "question": "Attribute to defer script execution?",
+    "options": [
+      "async",
+      "defer",
+      "delay",
+      "later"
+    ],
+    "answer": "defer"
+  },
+  {
+    "course": "HTML",
+    "question": "Multi-line text input?",
+    "options": [
+      "<input type=\"textarea\">",
+      "<textarea>",
+      "<multitext>",
+      "<input multiline>"
+    ],
+    "answer": "<textarea>"
+  },
+  {
+    "course": "HTML",
+    "question": "Correct favicon link?",
+    "options": [
+      "<link rel=\"icon\" href=\"favicon.ico\">",
+      "<favicon src=\"favicon.ico\">",
+      "<icon link=\"favicon.ico\">",
+      "<link icon=\"favicon.ico\">"
+    ],
+    "answer": "<link rel=\"icon\" href=\"favicon.ico\">"
+  },
+  {
+    "course": "HTML",
+    "question": "Caption for <figure>?",
+    "options": [
+      "<caption>",
+      "<figcaption>",
+      "<label>",
+      "<title>"
+    ],
+    "answer": "<figcaption>"
+  },
+  {
+    "course": "HTML",
+    "question": "Attribute for spell-checking?",
+    "options": [
+      "spell",
+      "spellcheck",
+      "autocorrect",
+      "check"
+    ],
+    "answer": "spellcheck"
+  },
+  {
+    "course": "HTML",
+    "question": "Input type for slider?",
+    "options": [
+      "type=\"range\"",
+      "type=\"slider\"",
+      "type=\"seek\"",
+      "type=\"progress\""
+    ],
+    "answer": "type=\"range\""
+  },
+  {
+    "course": "HTML",
+    "question": "Element for thematic content change?",
+    "options": [
+      "<div>",
+      "<aside>",
+      "<section>",
+      "<header>"
+    ],
+    "answer": "<section>"
+  },
+  {
+    "course": "HTML",
+    "question": "Input hint for email?",
+    "options": [
+      "type=\"email\"",
+      "format=\"email\"",
+      "inputmode=\"email\"",
+      "validate=\"email\""
+    ],
+    "answer": "type=\"email\""
+  },
+  {
+    "course": "HTML",
+    "question": "Tag for content tangential to main content?",
+    "options": [
+      "<aside>",
+      "<section>",
+      "<nav>",
+      "<article>"
+    ],
+    "answer": "<aside>"
+  },
+  {
+    "course": "HTML",
+    "question": "Correct lang attribute usage?",
+    "options": [
+      "<html language=\"en\">",
+      "<html lang=\"en\">",
+      "<html locale=\"en\">",
+      "<html code=\"en\">"
+    ],
+    "answer": "<html lang=\"en\">"
+  },
+  {
+    "course": "HTML",
+    "question": "How to make multi-column text?",
+    "options": [
+      "Use multiple <section>",
+      "Use container div + CSS columns/grid",
+      "Use only <table>",
+      "Use <columns> tag"
+    ],
+    "answer": "Use container div + CSS columns/grid"
+  },
+  {
+    "course": "HTML",
+    "question": "Attribute to make input read-only?",
+    "options": [
+      "readonly",
+      "disabled",
+      "locked",
+      "fixed"
+    ],
+    "answer": "readonly"
+  },
+  {
+    "course": "HTML",
+    "question": "Best for embedding external interactive content?",
+    "options": [
+      "<embed>",
+      "<iframe>",
+      "<object>",
+      "<slot>"
+    ],
+    "answer": "<iframe>"
+  },
+  {
+    "course": "HTML",
+    "question": "Attribute to group radio buttons?",
+    "options": [
+      "id",
+      "name",
+      "group",
+      "value"
+    ],
+    "answer": "name"
+  },
+  {
+    "course": "HTML",
+    "question": "Element to define clickable areas on images?",
+    "options": [
+      "<map> with <area>",
+      "<imagemap>",
+      "<coords>",
+      "<areas>"
+    ],
+    "answer": "<map> with <area>"
+  },
+  {
+    "course": "JAVA",
+    "question": "Java is a ______ language.",
+    "options": [
+      "Procedural",
+      "Object-oriented",
+      "Functional only",
+      "Scripting"
+    ],
+    "answer": "Object-oriented"
+  },
+  {
+    "course": "JAVA",
+    "question": "Java code runs on:",
+    "options": [
+      "JVM",
+      "CPU directly",
+      "Browser engine",
+      "Python VM"
+    ],
+    "answer": "JVM"
+  },
+  {
+    "course": "JAVA",
+    "question": "Java is:",
+    "options": [
+      "Platform dependent",
+      "Platform independent",
+      "Mobile only",
+      "OS-dependent"
+    ],
+    "answer": "Platform independent"
+  },
+  {
+    "course": "JAVA",
+    "question": "JVM stands for:",
+    "options": [
+      "Java Visual Machine",
+      "Java Virtual Machine",
+      "Java Value Mechanism",
+      "Java Virtual Mode"
+    ],
+    "answer": "Java Virtual Machine"
+  },
+  {
+    "course": "JAVA",
+    "question": "JDK includes:",
+    "options": [
+      "JRE + Development tools",
+      "Only JVM",
+      "Only editor",
+      "Operating system"
+    ],
+    "answer": "JRE + Development tools"
+  },
+  {
+    "course": "JAVA",
+    "question": "Extension of Java bytecode:",
+    "options": [
+      ".class",
+      ".java",
+      ".jar",
+      ".exe"
+    ],
+    "answer": ".class"
+  },
+  {
+    "course": "JAVA",
+    "question": "Which method starts program?",
+    "options": [
+      "start()",
+      "run()",
+      "main()",
+      "execute()"
+    ],
+    "answer": "main()"
+  },
+  {
+    "course": "JAVA",
+    "question": "Access modifier public means:",
+    "options": [
+      "Same class only",
+      "Same package only",
+      "Everywhere",
+      "Subclass only"
+    ],
+    "answer": "Everywhere"
+  },
+  {
+    "course": "JAVA",
+    "question": "Constructor name must match:",
+    "options": [
+      "File name",
+      "Method name",
+      "Class name",
+      "Package name"
+    ],
+    "answer": "Class name"
+  },
+  {
+    "course": "JAVA",
+    "question": "new keyword used for:",
+    "options": [
+      "Delete object",
+      "Create object",
+      "Import library",
+      "Pause thread"
+    ],
+    "answer": "Create object"
+  },
+  {
+    "course": "JAVA",
+    "question": "Default datatype for decimal:",
+    "options": [
+      "float",
+      "double",
+      "int",
+      "long"
+    ],
+    "answer": "double"
+  },
+  {
+    "course": "JAVA",
+    "question": "String in Java is:",
+    "options": [
+      "Mutable",
+      "Immutable",
+      "Primitive",
+      "Char only"
+    ],
+    "answer": "Immutable"
+  },
+  {
+    "course": "JAVA",
+    "question": "Which operator compares values?",
+    "options": [
+      "=",
+      "==",
+      ":=",
+      "equals"
+    ],
+    "answer": "=="
+  },
+  {
+    "course": "JAVA",
+    "question": "equals() checks:",
+    "options": [
+      "Reference",
+      "Content",
+      "Memory address",
+      "Hash only"
+    ],
+    "answer": "Content"
+  },
+  {
+    "course": "JAVA",
+    "question": "Wrapper class for int:",
+    "options": [
+      "IntClass",
+      "Integer",
+      "Number",
+      "IntWrapper"
+    ],
+    "answer": "Integer"
+  },
+  {
+    "course": "JAVA",
+    "question": "for-each loop:",
+    "options": [
+      "for (x:array)",
+      "for each array",
+      "foreach(array)",
+      "loop array"
+    ],
+    "answer": "for (x:array)"
+  },
+  {
+    "course": "JAVA",
+    "question": "Break keyword:",
+    "options": [
+      "Exit loop",
+      "Restart loop",
+      "Pause loop",
+      "End program"
+    ],
+    "answer": "Exit loop"
+  },
+  {
+    "course": "JAVA",
+    "question": "continue keyword:",
+    "options": [
+      "Skip iteration",
+      "End loop",
+      "Stop JVM",
+      "Throw error"
+    ],
+    "answer": "Skip iteration"
+  },
+  {
+    "course": "JAVA",
+    "question": "try-catch handles:",
+    "options": [
+      "Threads",
+      "Exceptions",
+      "Classes",
+      "GUI"
+    ],
+    "answer": "Exceptions"
+  },
+  {
+    "course": "JAVA",
+    "question": "finally block runs:",
+    "options": [
+      "Only if no exception",
+      "Always",
+      "Never",
+      "On crashes only"
+    ],
+    "answer": "Always"
+  },
+  {
+    "course": "JAVA",
+    "question": "this keyword refers to:",
+    "options": [
+      "Parent object",
+      "Current object",
+      "Child object",
+      "Package"
+    ],
+    "answer": "Current object"
+  },
+  {
+    "course": "JAVA",
+    "question": "super calls:",
+    "options": [
+      "Current class",
+      "Parent class",
+      "Interface",
+      "Final class"
+    ],
+    "answer": "Parent class"
+  },
+  {
+    "course": "JAVA",
+    "question": "Interface keyword:",
+    "options": [
+      "interface",
+      "Interface",
+      "INTERFACE",
+      "implements"
+    ],
+    "answer": "interface"
+  },
+  {
+    "course": "JAVA",
+    "question": "Abstract class can have:",
+    "options": [
+      "Only abstract methods",
+      "Both abstract & concrete methods",
+      "Only variables",
+      "Only constructor"
+    ],
+    "answer": "Both abstract & concrete methods"
+  },
+  {
+    "course": "JAVA",
+    "question": "final keyword means:",
+    "options": [
+      "Cannot change",
+      "Can override",
+      "Reassign always",
+      "Auto increment"
+    ],
+    "answer": "Cannot change"
+  },
+  {
+    "course": "JAVA",
+    "question": "Method overloading means:",
+    "options": [
+      "Same name, diff params",
+      "Same name, diff return only",
+      "Same class twice",
+      "Running multiple threads"
+    ],
+    "answer": "Same name, diff params"
+  },
+  {
+    "course": "JAVA",
+    "question": "Method overriding means:",
+    "options": [
+      "Child class changes parent method",
+      "Replace JVM",
+      "Duplicate method",
+      "Delete method"
+    ],
+    "answer": "Child class changes parent method"
+  },
+  {
+    "course": "JAVA",
+    "question": "Polymorphism means:",
+    "options": [
+      "Many forms",
+      "Single form",
+      "One object only",
+      "No abstraction"
+    ],
+    "answer": "Many forms"
+  },
+  {
+    "course": "JAVA",
+    "question": "Encapsulation means:",
+    "options": [
+      "Hiding data",
+      "Showing all data",
+      "No classes",
+      "Inline functions"
+    ],
+    "answer": "Hiding data"
+  },
+  {
+    "course": "JAVA",
+    "question": "Package keyword:",
+    "options": [
+      "package",
+      "pkg",
+      "import",
+      "bundle"
+    ],
+    "answer": "package"
+  },
+  {
+    "course": "JAVA",
+    "question": "import used for:",
+    "options": [
+      "Include classes",
+      "Delete packages",
+      "Compile code",
+      "Run JVM"
+    ],
+    "answer": "Include classes"
+  },
+  {
+    "course": "JAVA",
+    "question": "Array index starts from:",
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "Depends"
+    ],
+    "answer": "0"
+  },
+  {
+    "course": "JAVA",
+    "question": "Length of array:",
+    "options": [
+      "size()",
+      "count()",
+      "length",
+      "length()"
+    ],
+    "answer": "length"
+  },
+  {
+    "course": "JAVA",
+    "question": "Garbage collection runs:",
+    "options": [
+      "Manually only",
+      "Automatically",
+      "Never",
+      "File close only"
+    ],
+    "answer": "Automatically"
+  },
+  {
+    "course": "JAVA",
+    "question": "Thread created using:",
+    "options": [
+      "Thread class",
+      "Runnable interface",
+      "Both",
+      "None"
+    ],
+    "answer": "Both"
+  },
+  {
+    "course": "JAVA",
+    "question": "sleep() belongs to:",
+    "options": [
+      "Thread class",
+      "Math class",
+      "File class",
+      "Scanner class"
+    ],
+    "answer": "Thread class"
+  },
+  {
+    "course": "JAVA",
+    "question": "Scanner class in:",
+    "options": [
+      "java.io",
+      "java.util",
+      "java.lang",
+      "java.text"
+    ],
+    "answer": "java.util"
+  },
+  {
+    "course": "JAVA",
+    "question": "Read integer using Scanner:",
+    "options": [
+      "nextInt()",
+      "readInt()",
+      "inputInt()",
+      "getInt()"
+    ],
+    "answer": "nextInt()"
+  },
+  {
+    "course": "JAVA",
+    "question": "StringBuilder is:",
+    "options": [
+      "Mutable",
+      "Immutable",
+      "Constant",
+      "Final"
+    ],
+    "answer": "Mutable"
+  },
+  {
+    "course": "JAVA",
+    "question": "Which is checked exception?",
+    "options": [
+      "RuntimeException",
+      "IOException",
+      "NullPointerException",
+      "ArithmeticException"
+    ],
+    "answer": "IOException"
+  },
+  {
+    "course": "JAVA",
+    "question": "HashMap stores:",
+    "options": [
+      "Key-value pairs",
+      "Values only",
+      "Keys only",
+      "Sorted data only"
+    ],
+    "answer": "Key-value pairs"
+  },
+  {
+    "course": "JAVA",
+    "question": "size of boolean:",
+    "options": [
+      "1 byte",
+      "JVM dependent",
+      "8 bits",
+      "4 bits"
+    ],
+    "answer": "JVM dependent"
+  },
+  {
+    "course": "JAVA",
+    "question": "Java follows:",
+    "options": [
+      "Call by value",
+      "Call by reference",
+      "Both",
+      "None"
+    ],
+    "answer": "Call by value"
+  },
+  {
+    "course": "JAVA",
+    "question": "toString() used for:",
+    "options": [
+      "Convert to string",
+      "Delete string",
+      "Pause string",
+      "Compare"
+    ],
+    "answer": "Convert to string"
+  },
+  {
+    "course": "JAVA",
+    "question": "JVM memory has:",
+    "options": [
+      "Heap",
+      "Stack",
+      "Method area",
+      "All"
+    ],
+    "answer": "All"
+  },
+  {
+    "course": "JAVA",
+    "question": "finalize() used for:",
+    "options": [
+      "Garbage cleanup hint",
+      "Compile code",
+      "Exit JVM",
+      "Close thread"
+    ],
+    "answer": "Garbage cleanup hint"
+  },
+  {
+    "course": "JAVA",
+    "question": "JDBC stands for:",
+    "options": [
+      "Java Database Connectivity",
+      "Java Data Compiler",
+      "Jet Database Control",
+      "Java Debug Console"
+    ],
+    "answer": "Java Database Connectivity"
+  },
+  {
+    "course": "JAVA",
+    "question": "Which keyword prevents inheritance?",
+    "options": [
+      "final",
+      "abstract",
+      "static",
+      "private"
+    ],
+    "answer": "final"
+  },
+  {
+    "course": "JAVA",
+    "question": "Default value of int:",
+    "options": [
+      "0",
+      "null",
+      "garbage",
+      "undefined"
+    ],
+    "answer": "0"
+  },
+  {
+    "course": "JAVA",
+    "question": "JVM is written in:",
+    "options": [
+      "C/C++",
+      "Java",
+      "Python",
+      "Kotlin"
+    ],
+    "answer": "C/C++"
+  },
+  {
+    "course": "JavaScript",
+    "question": "JavaScript is a ______ language.",
+    "options": [
+      "Compiled",
+      "Interpreted",
+      "Machine",
+      "Markup"
+    ],
+    "answer": "Interpreted"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which HTML tag is used to include JS?",
+    "options": [
+      "<javascript>",
+      "<script>",
+      "<js>",
+      "<code>"
+    ],
+    "answer": "<script>"
+  },
+  {
+    "course": "JavaScript",
+    "question": "console.log() is used to:",
+    "options": [
+      "Print to console",
+      "Show alert box",
+      "Log errors only",
+      "Compile code"
+    ],
+    "answer": "Print to console"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which keyword declares a block-scoped variable?",
+    "options": [
+      "var",
+      "let",
+      "static",
+      "const var"
+    ],
+    "answer": "let"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which operator checks value + type?",
+    "options": [
+      "==",
+      "=",
+      "===",
+      "!="
+    ],
+    "answer": "==="
+  },
+  {
+    "course": "JavaScript",
+    "question": "typeof null returns?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "value"
+    ],
+    "answer": "object"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which creates a function?",
+    "options": [
+      "function myFunc(){}",
+      "func myFunc()()",
+      "def myFunc(){}",
+      "create function myFunc()"
+    ],
+    "answer": "function myFunc(){}"
+  },
+  {
+    "course": "JavaScript",
+    "question": "What does DOM stand for?",
+    "options": [
+      "Document Object Model",
+      "Data Object Mode",
+      "Dynamic Output Model",
+      "Document Output Map"
+    ],
+    "answer": "Document Object Model"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which method removes the last array element?",
+    "options": [
+      "shift()",
+      "pop()",
+      "remove()",
+      "delete()"
+    ],
+    "answer": "pop()"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which adds element to end of an array?",
+    "options": [
+      "push()",
+      "append()",
+      "addEnd()",
+      "insert()"
+    ],
+    "answer": "push()"
+  },
+  {
+    "course": "JavaScript",
+    "question": "=== means:",
+    "options": [
+      "Equal",
+      "Strict equal",
+      "Assign",
+      "Not equal"
+    ],
+    "answer": "Strict equal"
+  },
+  {
+    "course": "JavaScript",
+    "question": "prompt() does what?",
+    "options": [
+      "Display message",
+      "Input dialog box",
+      "Print to console",
+      "Select element"
+    ],
+    "answer": "Input dialog box"
+  },
+  {
+    "course": "JavaScript",
+    "question": "NaN stands for:",
+    "options": [
+      "Not a Node",
+      "Not a Number",
+      "Null and None",
+      "Not any Number"
+    ],
+    "answer": "Not a Number"
+  },
+  {
+    "course": "JavaScript",
+    "question": "JSON stands for:",
+    "options": [
+      "Java Standard Output Network",
+      "JavaScript Object Notation",
+      "Java Secure Online Network",
+      "Java Script Ordered Name"
+    ],
+    "answer": "JavaScript Object Notation"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which keyword stops a loop?",
+    "options": [
+      "end",
+      "break",
+      "exit",
+      "stop"
+    ],
+    "answer": "break"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Arrow function syntax:",
+    "options": [
+      "function => () {}",
+      "() => {}",
+      "-> {}",
+      "fn() => {}"
+    ],
+    "answer": "() => {}"
+  },
+  {
+    "course": "JavaScript",
+    "question": "localStorage stores data:",
+    "options": [
+      "Until tab closes",
+      "Until browser closes",
+      "Permanently (until manually removed)",
+      "For 1 day"
+    ],
+    "answer": "Permanently (until manually removed)"
+  },
+  {
+    "course": "JavaScript",
+    "question": "undefined means:",
+    "options": [
+      "No value assigned",
+      "Null value",
+      "Error",
+      "Empty string"
+    ],
+    "answer": "No value assigned"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Array length property:",
+    "options": [
+      "size",
+      "length",
+      "count",
+      "index"
+    ],
+    "answer": "length"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which is NOT a loop?",
+    "options": [
+      "for",
+      "while",
+      "loop",
+      "do…while"
+    ],
+    "answer": "loop"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Convert string to number:",
+    "options": [
+      "parseInt()",
+      "toNumber()",
+      "numberConvert()",
+      "parseStr()"
+    ],
+    "answer": "parseInt()"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which operator concatenates strings?",
+    "options": [
+      "+",
+      "*",
+      "/",
+      "&"
+    ],
+    "answer": "+"
+  },
+  {
+    "course": "JavaScript",
+    "question": "[] instanceof Array returns:",
+    "options": [
+      "true",
+      "false",
+      "error",
+      "undefined"
+    ],
+    "answer": "true"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Event for button click?",
+    "options": [
+      "onchange",
+      "onclick",
+      "onpress",
+      "onaction"
+    ],
+    "answer": "onclick"
+  },
+  {
+    "course": "JavaScript",
+    "question": "typeof [] returns:",
+    "options": [
+      "array",
+      "object",
+      "list",
+      "collection"
+    ],
+    "answer": "object"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which is false?",
+    "options": [
+      "JS supports OOP",
+      "JS is case-sensitive",
+      "JS can run outside browser",
+      "JS is compiled by C compiler"
+    ],
+    "answer": "JS is compiled by C compiler"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Template literals use:",
+    "options": [
+      "\"\"",
+      "''",
+      "``",
+      "()"
+    ],
+    "answer": "``"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Promise states:",
+    "options": [
+      "start, progress, done",
+      "pending, fulfilled, rejected",
+      "running, done, failed",
+      "init, success, fail"
+    ],
+    "answer": "pending, fulfilled, rejected"
+  },
+  {
+    "course": "JavaScript",
+    "question": "map() returns:",
+    "options": [
+      "Modified array",
+      "Single value",
+      "Original array",
+      "Error"
+    ],
+    "answer": "Modified array"
+  },
+  {
+    "course": "JavaScript",
+    "question": "filter() returns:",
+    "options": [
+      "Items that pass condition",
+      "First matching item",
+      "Sorted array",
+      "Removed items"
+    ],
+    "answer": "Items that pass condition"
+  },
+  {
+    "course": "JavaScript",
+    "question": "JS number type is:",
+    "options": [
+      "int only",
+      "float only",
+      "both int and float",
+      "decimal only"
+    ],
+    "answer": "both int and float"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which stops propagation?",
+    "options": [
+      "stopFlow()",
+      "event.stopPropagation()",
+      "cancelBubble()",
+      "blockEvent()"
+    ],
+    "answer": "event.stopPropagation()"
+  },
+  {
+    "course": "JavaScript",
+    "question": "=== vs ==?",
+    "options": [
+      "Both same",
+      "=== strict, == loose",
+      "== strict, === loose",
+      "Neither compares type"
+    ],
+    "answer": "=== strict, == loose"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Hoisting moves:",
+    "options": [
+      "Functions & var declarations to top",
+      "Data to RAM",
+      "Code to top of page",
+      "CSS to header"
+    ],
+    "answer": "Functions & var declarations to top"
+  },
+  {
+    "course": "JavaScript",
+    "question": "this keyword refers to:",
+    "options": [
+      "Always window",
+      "Current object context",
+      "Parent class",
+      "Document"
+    ],
+    "answer": "Current object context"
+  },
+  {
+    "course": "JavaScript",
+    "question": "async function returns:",
+    "options": [
+      "Promise",
+      "Number",
+      "String",
+      "Boolean"
+    ],
+    "answer": "Promise"
+  },
+  {
+    "course": "JavaScript",
+    "question": "await can be used only in:",
+    "options": [
+      "Global scope",
+      "async functions",
+      "Constructors",
+      "Loops only"
+    ],
+    "answer": "async functions"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Set interval:",
+    "options": [
+      "setInterval()",
+      "setTime()",
+      "setRepeat()",
+      "timing()"
+    ],
+    "answer": "setInterval()"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Remove first array element:",
+    "options": [
+      "shift()",
+      "pop()",
+      "unshift()",
+      "removeFirst()"
+    ],
+    "answer": "shift()"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Check array length > 0:",
+    "options": [
+      "arr.count > 0",
+      "arr.length > 0",
+      "arr.size > 0",
+      "len(arr) > 0"
+    ],
+    "answer": "arr.length > 0"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which is truthy?",
+    "options": [
+      "0",
+      "\"\"",
+      "false",
+      "\"0\""
+    ],
+    "answer": "\"0\""
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which is a data-type?",
+    "options": [
+      "string",
+      "integer",
+      "character",
+      "alphabet"
+    ],
+    "answer": "string"
+  },
+  {
+    "course": "JavaScript",
+    "question": "isNaN(\"10\") returns:",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "error"
+    ],
+    "answer": "false"
+  },
+  {
+    "course": "JavaScript",
+    "question": "JSON.parse() converts:",
+    "options": [
+      "Object → JSON",
+      "JSON → Object",
+      "Array → JSON",
+      "JSON → String"
+    ],
+    "answer": "JSON → Object"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which creates new object?",
+    "options": [
+      "object()",
+      "new Object()",
+      "create()",
+      "build()"
+    ],
+    "answer": "new Object()"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Class keyword:",
+    "options": [
+      "class",
+      "className",
+      "struct",
+      "object"
+    ],
+    "answer": "class"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Spread operator:",
+    "options": [
+      "**",
+      "...",
+      ">>>",
+      "###"
+    ],
+    "answer": "..."
+  },
+  {
+    "course": "JavaScript",
+    "question": "Default param syntax:",
+    "options": [
+      "function(a default 10)",
+      "function(a = 10)",
+      "function(a: 10)",
+      "function default(a 10)"
+    ],
+    "answer": "function(a = 10)"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Find string length:",
+    "options": [
+      "strlen()",
+      "length",
+      "count()",
+      "size()"
+    ],
+    "answer": "length"
+  },
+  {
+    "course": "JavaScript",
+    "question": "Which throws error?",
+    "options": [
+      "console.log(x) without declaring x",
+      "console.log(\"\")",
+      "console.log(0)",
+      "console.log(true)"
+    ],
+    "answer": "console.log(x) without declaring x"
+  },
+  {
+    "course": "MongoDB",
+    "question": "MongoDB is a ______ database.",
+    "options": [
+      "Relational",
+      "NoSQL",
+      "Graph",
+      "File-based"
+    ],
+    "answer": "NoSQL"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Default data format in MongoDB is:",
+    "options": [
+      "XML",
+      "YAML",
+      "BSON",
+      "CSV"
+    ],
+    "answer": "BSON"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which command shows all databases?",
+    "options": [
+      "show dbs",
+      "list dbs",
+      "get databases",
+      "display dbs"
+    ],
+    "answer": "show dbs"
+  },
+  {
+    "course": "MongoDB",
+    "question": "To switch database:",
+    "options": [
+      "select db",
+      "use dbname",
+      "open db",
+      "db.choose"
+    ],
+    "answer": "use dbname"
+  },
+  {
+    "course": "MongoDB",
+    "question": "MongoDB stores data in:",
+    "options": [
+      "Tables",
+      "Collections",
+      "Files",
+      "Views"
+    ],
+    "answer": "Collections"
+  },
+  {
+    "course": "MongoDB",
+    "question": "A document in MongoDB is similar to:",
+    "options": [
+      "Row",
+      "Column",
+      "Key",
+      "Sheet"
+    ],
+    "answer": "Row"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which data format is used for queries?",
+    "options": [
+      "YAML",
+      "JSON-like",
+      "SQL",
+      "HTML"
+    ],
+    "answer": "JSON-like"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Insert one document:",
+    "options": [
+      "db.coll.add()",
+      "db.coll.insertOne()",
+      "insert db()",
+      "coll.addOne()"
+    ],
+    "answer": "db.coll.insertOne()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Insert many documents:",
+    "options": [
+      "insertMany()",
+      "addAll()",
+      "push()",
+      "appendMany()"
+    ],
+    "answer": "insertMany()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Find all docs:",
+    "options": [
+      "db.coll.read()",
+      "db.coll.view()",
+      "db.coll.find()",
+      "db.find.all()"
+    ],
+    "answer": "db.coll.find()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "MongoDB port default:",
+    "options": [
+      "27017",
+      "3306",
+      "8080",
+      "5432"
+    ],
+    "answer": "27017"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Remove document:",
+    "options": [
+      "delete()",
+      "remove()",
+      "deleteOne()",
+      "clear()"
+    ],
+    "answer": "deleteOne()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Update field:",
+    "options": [
+      "updateOne()",
+      "modify()",
+      "change()",
+      "alter()"
+    ],
+    "answer": "updateOne()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which operator sets a field value?",
+    "options": [
+      "$push",
+      "$set",
+      "$map",
+      "$apply"
+    ],
+    "answer": "$set"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which removes a field?",
+    "options": [
+      "$remove",
+      "$unset",
+      "$delete",
+      "$drop"
+    ],
+    "answer": "$unset"
+  },
+  {
+    "course": "MongoDB",
+    "question": "What is ObjectId?",
+    "options": [
+      "Binary key",
+      "Unique identifier",
+      "SQL key",
+      "Primary file"
+    ],
+    "answer": "Unique identifier"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which command shows current DB?",
+    "options": [
+      "show db",
+      "current db",
+      "db",
+      "db.current()"
+    ],
+    "answer": "db"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Embedded docs mean:",
+    "options": [
+      "Join tables",
+      "Nested documents",
+      "Stored procedures",
+      "Linked references"
+    ],
+    "answer": "Nested documents"
+  },
+  {
+    "course": "MongoDB",
+    "question": "MongoDB does not support:",
+    "options": [
+      "Joins",
+      "Indexes",
+      "Aggregation",
+      "Replication"
+    ],
+    "answer": "Joins"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which query returns first doc?",
+    "options": [
+      "findOne()",
+      "findFirst()",
+      "read()",
+      "findTop()"
+    ],
+    "answer": "findOne()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Create index:",
+    "options": [
+      "createIndex()",
+      "makeIndex()",
+      "newIndex()",
+      "index()"
+    ],
+    "answer": "createIndex()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Aggregation pipeline keyword:",
+    "options": [
+      "aggregate()",
+      "pipe()",
+      "chain()",
+      "group()"
+    ],
+    "answer": "aggregate()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "$match is used to:",
+    "options": [
+      "Filter docs",
+      "Sort docs",
+      "Group docs",
+      "Remove docs"
+    ],
+    "answer": "Filter docs"
+  },
+  {
+    "course": "MongoDB",
+    "question": "$group performs:",
+    "options": [
+      "Updates",
+      "Aggregation",
+      "Sorting",
+      "Insertion"
+    ],
+    "answer": "Aggregation"
+  },
+  {
+    "course": "MongoDB",
+    "question": "To sort results:",
+    "options": [
+      "sort()",
+      "order()",
+      "rank()",
+      "arrange()"
+    ],
+    "answer": "sort()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Replica set =",
+    "options": [
+      "Backup only",
+      "Group of servers for HA",
+      "Index structure",
+      "Query optimizer"
+    ],
+    "answer": "Group of servers for HA"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Sharding improves:",
+    "options": [
+      "Security",
+      "Horizontal scaling",
+      "CSS styling 😂",
+      "Logs only"
+    ],
+    "answer": "Horizontal scaling"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which command drops a DB?",
+    "options": [
+      "drop()",
+      "db.dropDatabase()",
+      "deleteDB()",
+      "removeDB()"
+    ],
+    "answer": "db.dropDatabase()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which drop collection?",
+    "options": [
+      "dropCollection()",
+      "db.coll.drop()",
+      "deleteCollection()",
+      "removeCollection()"
+    ],
+    "answer": "db.coll.drop()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Boolean true:",
+    "options": [
+      "TRUE",
+      "true",
+      "1",
+      "Yes"
+    ],
+    "answer": "true"
+  },
+  {
+    "course": "MongoDB",
+    "question": "BSON expands to:",
+    "options": [
+      "Binary Script Object Notation",
+      "Binary JSON",
+      "Basic Script Object Node",
+      "Base Sequential Object Notation"
+    ],
+    "answer": "Binary JSON"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which type is not in Mongo?",
+    "options": [
+      "string",
+      "date",
+      "blob",
+      "double"
+    ],
+    "answer": "blob"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Indexes help in:",
+    "options": [
+      "Speeding queries",
+      "Slowing DB",
+      "Styling UI 🤪",
+      "Web hosting"
+    ],
+    "answer": "Speeding queries"
+  },
+  {
+    "course": "MongoDB",
+    "question": "_id field is:",
+    "options": [
+      "Optional",
+      "Mandatory",
+      "Deprecated",
+      "Temporary"
+    ],
+    "answer": "Mandatory"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Command to count docs:",
+    "options": [
+      "count()",
+      "countDocuments()",
+      "size()",
+      "len()"
+    ],
+    "answer": "countDocuments()"
+  },
+  {
+    "course": "MongoDB",
+    "question": "MongoDB shell written in:",
+    "options": [
+      "Python",
+      "JavaScript",
+      "C++",
+      "Java"
+    ],
+    "answer": "JavaScript"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Compass is a:",
+    "options": [
+      "MongoDB GUI",
+      "Browser",
+      "Game 😂",
+      "JSON editor"
+    ],
+    "answer": "MongoDB GUI"
+  },
+  {
+    "course": "MongoDB",
+    "question": "To check collection list:",
+    "options": [
+      "show collections",
+      "get collections",
+      "list collections",
+      "display collections"
+    ],
+    "answer": "show collections"
+  },
+  {
+    "course": "MongoDB",
+    "question": "$limit is used to:",
+    "options": [
+      "restrict records",
+      "delete records",
+      "add records",
+      "rename records"
+    ],
+    "answer": "restrict records"
+  },
+  {
+    "course": "MongoDB",
+    "question": "$sort order ascending:",
+    "options": [
+      "0",
+      "-1",
+      "1",
+      "2"
+    ],
+    "answer": "1"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which supports transactions?",
+    "options": [
+      "MyISAM",
+      "MongoDB replica sets",
+      "Text files",
+      "None"
+    ],
+    "answer": "MongoDB replica sets"
+  },
+  {
+    "course": "MongoDB",
+    "question": "GridFS used for:",
+    "options": [
+      "Images & videos",
+      "SQL logs",
+      "CSS files",
+      "Ports"
+    ],
+    "answer": "Images & videos"
+  },
+  {
+    "course": "MongoDB",
+    "question": "find() returns:",
+    "options": [
+      "Cursor",
+      "Array",
+      "JSON only",
+      "File"
+    ],
+    "answer": "Cursor"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Compass feature:",
+    "options": [
+      "Visual query builder",
+      "Game engine",
+      "ML library",
+      "Web server"
+    ],
+    "answer": "Visual query builder"
+  },
+  {
+    "course": "MongoDB",
+    "question": "$project used to:",
+    "options": [
+      "Select specific fields",
+      "Update docs",
+      "Delete docs",
+      "Join tables"
+    ],
+    "answer": "Select specific fields"
+  },
+  {
+    "course": "MongoDB",
+    "question": "TTL index removes docs:",
+    "options": [
+      "Immediately",
+      "After time expires",
+      "Never",
+      "Randomly 😅"
+    ],
+    "answer": "After time expires"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which backup tool?",
+    "options": [
+      "mongodump",
+      "mongoback",
+      "mongosave",
+      "backupDB"
+    ],
+    "answer": "mongodump"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Restore tool:",
+    "options": [
+      "mongorestore",
+      "mongoimport",
+      "importdb",
+      "loadmongo"
+    ],
+    "answer": "mongorestore"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Import JSON file:",
+    "options": [
+      "mongoimport",
+      "mongodump",
+      "jsonload",
+      "loadjson"
+    ],
+    "answer": "mongoimport"
+  },
+  {
+    "course": "MongoDB",
+    "question": "Which command starts server?",
+    "options": [
+      "mongod",
+      "mongo",
+      "mongos",
+      "mongo-start"
+    ],
+    "answer": "mongod"
+  }
+]
