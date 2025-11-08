@@ -1,6 +1,6 @@
 {
-  "buildCommand": "echo 'No build needed for static frontend'",
-  "outputDirectory": "frontend",
-  "devCommand": "echo 'Static HTML'",
-  "installCommand": "echo 'No dependencies'"
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false
 }
