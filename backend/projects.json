@@ -1,0 +1,14 @@
+[
+  {
+    "course": "JavaScript",
+    "title": "To-Do List App",
+    "description": "Create an interactive to-do list using JavaScript and DOM manipulation.",
+    "difficulty": "Easy"
+  },
+  {
+    "course": "MySQL",
+    "title": "Student Management System",
+    "description": "Build a database to manage student records, grades, and attendance using MySQL.",
+    "difficulty": "Medium"
+  }
+]

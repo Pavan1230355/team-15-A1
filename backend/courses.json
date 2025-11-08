@@ -1,0 +1,98 @@
+[
+  {
+    "name": "HTML",
+    "description": "HTML (HyperText Markup Language) is the standard markup language used to create the structure of web pages. It defines elements like headings, paragraphs, lists, links, images, forms and semantic containers that browsers interpret and render. Understanding HTML is the first step for web development because it builds the page skeleton that CSS and JavaScript enhance.",
+    "coreConcepts": [
+      "Elements & Tags: HTML is composed of tags like <html>, <head>, <body>, <h1>–<h6>, <p>, <a>, <img> which define a document’s structure and content.",
+      "Attributes: Elements can have attributes (e.g., id, class, src, href, alt) that add metadata and connect HTML to CSS/JavaScript.",
+      "Semantic HTML: Use semantic tags (header, nav, main, article, section, footer) to express meaning and improve accessibility and SEO.",
+      "Forms & Inputs: Forms collect user input using <form>, <input>, <select>, <textarea>, and require proper labeling and validation.",
+      "Document Tree (DOM): The browser builds a Document Object Model (DOM) from HTML, which JavaScript can traverse and manipulate.",
+      "Media Embedding: Images (<img>), audio (<audio>), video (<video>), and embedding (iframe) are used to include multimedia.",
+      "Links & Navigation: Anchor (<a>) tags create links; relative vs absolute URLs change how resources are referenced.",
+      "Accessibility (a11y): Use alt, aria-* attributes, semantic elements, and correct heading order to make pages accessible to screen readers."
+    ],
+    "example": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\">\n    <title>Example Page</title>\n  </head>\n  <body>\n    <header>\n      <h1>Welcome to Example</h1>\n      <nav>\n        <ul>\n          <li><a href=\"#about\">About</a></li>\n          <li><a href=\"#contact\">Contact</a></li>\n        </ul>\n      </nav>\n    </header>\n    <main>\n      <article>\n        <h2 id=\"about\">About</h2>\n        <p>This is an example of semantic HTML structure.</p>\n      </article>\n      <section id=\"contact\">\n        <h3>Contact</h3>\n        <form>\n          <label for=\"email\">Email:</label>\n          <input id=\"email\" type=\"email\" name=\"email\">\n          <button type=\"submit\">Send</button>\n        </form>\n      </section>\n    </main>\n  </body>\n</html>",
+    "why": "HTML forms the backbone of every website. Without HTML, browsers would have no structure to render. Learning HTML teaches you how content is organized and gives you the foundational knowledge to learn CSS and JavaScript effectively. Mastering semantic HTML also helps with accessibility and search engine optimization."
+  },
+  {
+    "name": "CSS",
+    "description": "Cascading Style Sheets (CSS) control how HTML content is presented — its layout, colors, typography, spacing, and responsive behavior. CSS separates content (HTML) from presentation (CSS), enabling consistent design across pages. Modern CSS includes flexible box and grid layout models, responsive techniques, and powerful selectors and pseudo-classes.",
+    "coreConcepts": [
+      "Selectors & Specificity: Select elements using tag, class, id, and attribute selectors. Specificity rules decide which styles apply if conflicting.",
+      "Box Model: Every element has margin, border, padding, and content areas. Understanding the box model is essential for spacing and layout.",
+      "Layout Systems: Use display:flex (Flexbox) for 1D layouts and display:grid (Grid) for 2D layouts to build responsive structures.",
+      "Responsive Design: Use media queries, relative units (%, em, rem) and fluid layouts to support different screen sizes.",
+      "Typography: Control font-family, font-size, line-height and letter-spacing; use web fonts for consistent presentation.",
+      "State & Interaction: Pseudo-classes (:hover, :focus, :active) and transitions/animations create interactive UI experiences.",
+      "Positioning: static, relative, absolute, fixed and sticky positions for placing elements precisely.",
+      "CSS Variables & Preprocessing: Use custom properties (--var) for maintainable theme variables; preprocessors (Sass, Less) add tooling."
+    ],
+    "example": "/* Example: Centered card with responsive width */\n.card {\n  max-width: 800px;\n  margin: 24px auto;\n  padding: 16px;\n  border-radius: 8px;\n  box-shadow: 0 4px 12px rgba(0,0,0,0.08);\n}\n@media (max-width: 600px) {\n  .card { padding: 12px; }\n}",
+    "why": "CSS transforms plain HTML into appealing, usable interfaces. Mastering CSS enables you to create responsive components that look good on any device and improves the user experience. Good CSS architecture (BEM, utility classes, design tokens) also makes large projects maintainable."
+  },
+  {
+    "name": "JavaScript",
+    "description": "JavaScript is the programming language of the web that enables interactivity and dynamic content in browsers. It manipulates the DOM, handles events, communicates with servers, and powers front-end frameworks and server-side platforms. Modern JS (ES6+) introduces modules, arrow functions, promises, async/await, and classes for clearer code.",
+    "coreConcepts": [
+      "Syntax & Types: Learn primitives (string, number, boolean, null, undefined, symbol) and objects (arrays & plain objects).",
+      "Variables & Scope: var, let, const have different scoping rules; prefer const/let for predictable code.",
+      "Functions & Closures: Functions are first-class; closures capture variables from outer scopes.",
+      "Asynchronous JS: Promises, async/await, and callbacks handle asynchronous operations like network requests.",
+      "DOM Manipulation & Events: Use document.querySelector and event listeners to respond to user actions and update UI.",
+      "Fetch & APIs: Use fetch or libraries (axios) to call REST APIs and process JSON responses.",
+      "Modules & Tooling: ES Modules (import/export) and bundlers (Vite, webpack) organize and package code.",
+      "Debugging & Testing: Use browser devtools, console, and testing frameworks (Jest) for quality code."
+    ],
+    "example": "// Example: Fetch and render data\nasync function loadUsers(){\n  const r = await fetch('/api/users');\n  const users = await r.json();\n  const list = document.getElementById('users');\n  users.forEach(u => { const li = document.createElement('li'); li.textContent = u.name; list.appendChild(li); });\n}\nloadUsers();",
+    "why": "JavaScript is essential for web applications — it controls behavior, manages state, and integrates with backends. Knowledge of JavaScript opens the door to frameworks (React, Vue), server-side development (Node.js), and full-stack capabilities."
+  },
+  {
+    "name": "MongoDB",
+    "description": "MongoDB is a document-oriented NoSQL database that stores data as flexible JSON-like documents (BSON). It is designed for scalability and developer productivity, enabling rapid iteration and easy mapping to application objects. MongoDB is often used with Node.js and modern web stacks.",
+    "coreConcepts": [
+      "Documents & Collections: Data is stored as documents (JSON-like) inside collections; documents can vary in structure.",
+      "Flexible Schema: Schemas are optional, so documents in a collection can have different fields — useful for evolving data.",
+      "CRUD Operations: Create (insertOne/insertMany), Read (find/findOne), Update (updateOne/updateMany), Delete (deleteOne).",
+      "Indexes: Indexes improve query performance. Create compound indexes and choose fields carefully for read-heavy workloads.",
+      "Aggregation Framework: Powerful pipeline for data processing (match, group, project, sort, unwind) similar to SQL GROUP BY.",
+      "Transactions: Multi-document transactions are supported (important for consistent updates across collections).",
+      "Scaling & Replication: Replica sets for high availability and sharding for horizontal scaling across many nodes.",
+      "Drivers & ODMs: Use official drivers or ODMs (Mongoose) to interact with MongoDB from applications."
+    ],
+    "example": "// Example (Node.js + MongoDB native driver)\nconst client = new MongoClient(uri);\nawait client.connect();\nconst db = client.db('app');\nawait db.collection('users').insertOne({ name: 'Alex', age: 21 });\nconst users = await db.collection('users').find({}).toArray();",
+    "why": "MongoDB is ideal when you need a flexible schema, quick development, and horizontal scalability. It fits well with JSON-based applications and allows developers to iterate quickly without heavy migrations."
+  },
+  {
+    "name": "MySQL",
+    "description": "MySQL is a relational database management system (RDBMS) that stores structured data in tables and supports SQL for querying and manipulation. It is widely used in enterprise systems and web applications where data integrity and consistency are important.",
+    "coreConcepts": [
+      "Tables & Schemas: Data is organized into tables with columns (typed) and rows (records).",
+      "SQL Basics: SELECT, INSERT, UPDATE, DELETE for CRUD; WHERE, ORDER BY, LIMIT to filter and sort results.",
+      "Joins: INNER JOIN, LEFT JOIN, RIGHT JOIN combine rows from multiple tables based on related keys.",
+      "Indexes & Performance: Indexes speed up queries; use EXPLAIN to analyze query execution plans.",
+      "Normalization: Normalize data (1NF..3NF) to reduce redundancy; denormalize when performance requires.",
+      "Transactions & ACID: Transactions ensure atomicity and consistency; use BEGIN, COMMIT, ROLLBACK.",
+      "Stored Procedures & Views: Reuse logic in the database and simplify complex queries for clients.",
+      "Backup & Security: Regular backups, user privileges and secure access are critical for production systems."
+    ],
+    "example": "-- Example: Create and query table\nCREATE TABLE students (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(100), age INT);\nINSERT INTO students (name, age) VALUES ('Alex', 21);\nSELECT * FROM students WHERE age > 18;",
+    "why": "MySQL provides strong consistency and a mature ecosystem for reporting and transactional systems. It's a great choice when relational data and integrity constraints are central to the application."
+  },
+  {
+    "name": "Java",
+    "description": "Java is a statically typed, object-oriented programming language that runs on the Java Virtual Machine (JVM). It emphasizes portability (\"write once, run anywhere\"), strong typing, and a vast standard library. Java is common for enterprise applications, Android development, and large-scale backend systems.",
+    "coreConcepts": [
+      "Syntax & Types: Java has static types (int, double, boolean, String, etc.) and uses classes and objects for structure.",
+      "OOP Principles: Encapsulation, inheritance, polymorphism and abstraction are core to Java design.",
+      "JVM & Bytecode: Java code compiles to bytecode executed by the JVM, enabling cross-platform portability.",
+      "Collections Framework: Lists, Sets, Maps, Queues and utility classes help manage groups of objects.",
+      "Concurrency: Java provides threads, synchronized blocks, and higher-level concurrency utilities (ExecutorService).",
+      "Exception Handling: Checked/unchecked exceptions and try/catch/finally blocks for robust error handling.",
+      "Build Tools & Ecosystem: Maven/Gradle for builds, JUnit for testing, and many libraries (Spring) for web development.",
+      "Memory Management: Garbage collection handles memory but understanding object lifetimes and references remains important."
+    ],
+    "example": "public class Hello {\n  public static void main(String[] args) {\n    System.out.println(\"Hello, Java!\");\n  }\n}",
+    "why": "Java is widely used for large-scale, reliable systems. It has strong tooling, mature frameworks (Spring), and a huge ecosystem. Learning Java is valuable for backend engineering, Android development, and software engineering roles that require performance and stability."
+  }
+]
