@@ -1,11 +1,8 @@
 {
-  "name": "quickquiz",
-  "version": "1.0.0",
-  "description": "QuickQuiz Full Stack Application",
-  "scripts": {
-    "dev": "vercel dev"
-  },
-  "dependencies": {
-    "mongoose": "^7.0.5"
-  }
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/frontend/$1"
+    }
+  ]
 }
