@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickQuiz - Home</title>
+    <style>
+        body {
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            padding-top: 64px;
+            background: url("pictures/close-up-puzzle-background_23-2149289227 (1).jpg") no-repeat center center fixed;
+      background-size: cover;
+        }
+
+        .nav {
+            background-color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            color: #4f46e5;
+            border-radius: 9999px;
+            object-fit: cover;
+        }
+
+        .logo-text {
+            margin-left: 8px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #4f46e5;
+        }
+
+        .desktop-nav {
+            display: none;
+            margin-left: 24px;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-flex-right {
+            display: none;
+            margin-left: 24px;
+            align-items: center;
+            gap: 16px;
+        }
+
+        @media (min-width: 640px) {
+            .desktop-nav, .nav-flex-right {
+                display: flex;
+            }
+        }
+
+        .nav-link {
+            font-size: 14px;
+            font-weight: 500;
+            color: #4b5563;
+            text-decoration: none;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #4f46e5;
+        }
+
+        .btn-primary {
+            background-color: #4f46e5;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #4338ca;
+        }
+
+        .hero-section {
+            color: white;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .hero-content-container {
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 16px;
+            padding-right: 16px;
+            display: grid;
+            gap: 32px;
+        }
+
+      
+
+        .hero-text-content h1 {
+            font-size: 48px;
+            font-weight: 800;
+        }
+
+        @media (min-width: 640px) {
+            .hero-text-content h1 {
+                font-size: 60px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .hero-text-content h1 {
+                font-size: 72px;
+            }
+        }
+
+        .hero-text-content h1 .block {
+            display: block;
+        }
+
+        .hero-text-content h1 .indigo-text {
+            color:yellow;
+        }
+
+        .hero-text-content p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .hero-buttons {
+            margin-top: 40px;
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn-light {
+            background-color: #ffffff;
+            color: #4f46e5;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            text-decoration: none;
+            transition-property: background-color;
+            transition-duration: 150ms;
+        }
+
+        .btn-light:hover {
+            background-color: #f3f4f6;
+        }
+
+        .btn-secondary {
+           background-color: white;
+            border: 1px solid ;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            text-decoration: none;
+            transition-property: background-color;
+        }
+
+        .btn-secondary:hover {
+             background-color: #f3f4f6;
+        }
+
+        .hero-img-container {
+            margin-top: 48px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image {
+            width: 384px;
+            border-radius: 8px;
+        }
+
+        .reviews-section {
+            padding: 64px 16px;
+            max-width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .reviews-section h2 {
+            font-size: 36px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 48px;
+        }
+
+        .reviews-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .review-card {
+            background-color: #ffffff;
+            padding: 24px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 350px;
+            text-align: left;
+        }
+
+        .review-card img {
+            width: 64px;
+            height: 64px;
+            border-radius: 9999px;
+            margin-bottom: 16px;
+        }
+
+        .review-stars {
+            color: #facc15;
+            font-size: 24px;
+        }
+
+        .review-text {
+            color: #4b5563;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            color: #111827;
+            margin-top: 12px;
+        }
+
+        .footer-wrapper {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 48px 16px;
+        }
+
+        .footer-section {
+            background-color: #ffffff;
+            padding: 32px;
+            border-radius: 8px;
+            margin-bottom: 32px;
+        }
+
+        .motive-section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 16px;
+        }
+
+        .motive-section p {
+            color: #4b5563;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .contact-section fieldset {
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 20px 200px 20px 200px;
+        }
+
+        .contact-section legend {
+            font-size: 16px;
+            font-weight: 600;
+            color: #4f46e5;
+            padding: 0 8px;
+        }
+        
+        .contact-info {
+            display: flex; 
+            flex-direction: column; 
+            gap: 8px; 
+            font-size: 14px;
+            color: #4b5563;
+        }
+
+        .footer-copyright {
+            background: #fff;
+            text-align: center;
+            padding: 15px;
+            color: #555;
+        }
+
+        .motive-wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            border: 40px;
+        }
+
+        @media (max-width: 767px) {
+            .motive-wrapper, .contact-wrapper {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-flex">
+                <div class="nav-items">
+                    <div class="logo-container">
+                        <img class="logo-icon" src="pictures/v1008-02.jpg" alt="Quick Quiz logo" />
+                        <span class="logo-text">Quick Quiz</span>
+                    </div>
+                </div>
+                <div class="desktop-nav">
+                    <a href="indexx.html" class="nav-link active">Home</a>
+                    <a href="courses.html" class="nav-link">Courses</a>
+                    <a href="quizz.html" class="nav-link">Quizzes</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                </div>
+                <div class="nav-flex-right">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <button class="btn-primary">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content-container">
+            <div class="hero-text-col">
+                <div class="hero-text-content">
+                    <h1>
+                        <span class="block">Test Your Knowledge</span>
+                        <span class="block indigo-text">With QuickQuiz</span>
+                    </h1>
+                    <p class="hero-description">
+                        Create, share, and take interactive quizzes on any topic. Join thousands of users expanding their knowledge daily.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="quizz.html" class="btn-light">Get Started</a>
+                        <a href="courses.html" class="btn-secondary">Browse Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews-section">
+        <h2>What Our Users Say</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <img src="pictures/cf21b18f1433bc14e4bcbef2357feb99.jpg" alt="User profile photo" class="review-image" />
+                <div class="review-stars">★★★★★</div>
+                <p clas`s="review-text">"QuickQuiz is an amazing tool for my daily study routine. The quizzes are well-structured and help me revise complex topics effortlessly. It's truly a game-changer!"</p>
+                <div class="reviewer-name">- Priya Sharma</div>
+            </div>
+            <div class="review-card">
+                <img src="pictures/compressed_c40a9a69956768f351cf386c2f3882d4.webp" alt="User profile photo" class="review-image" />
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"As a teacher, I use this platform to create custom quizzes for my students. The interface is intuitive, and the results dashboard helps me track their progress easily. Highly recommended."</p>
+                <div class="reviewer-name">- Rajesh Kumar</div>
+            </div>
+            <div class="review-card">
+                <img src="pictures/1000_F_316213099_UOvDxt3MsZjNTLT8LFgwsnzU8kfimsq7.jpg" alt="User profile photo" class="review-image" />
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"This app makes learning fun and engaging! I can challenge my friends and see who knows more. The variety of courses is impressive, and the experience is smooth."</p>
+                <div class="reviewer-name">- Aarav Singh</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+        <div class="motive-wrapper">
+            <div class="motive-section footer-section">
+                <h3>What We Want to Achieve with QuickQuiz</h3>
+                <p>Our mission is to make learning accessible and engaging for everyone. We believe that quizzes are a powerful tool for reinforcing knowledge and identifying areas for improvement. By providing a platform for users to create and share their own quizzes, we hope to foster a global community of learners who can teach and test each other, making education a collaborative and enjoyable experience for all.</p>
+            </div>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-section footer-section">
+                <fieldset>
+                    <legend>You can contact us at:</legend>
+                    <div class="contact-info">
+                        <span>Email: projectquickquiz@email.com</span>
+                        <span>Phone: +91 98765 43210</span>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        © 2024 QuickQuiz. All rights reserved.
+    </div>
+</body>
+</html>

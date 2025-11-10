@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects - Quick Quiz</title>
+  <style>
+    :root{
+      --bg-1: linear-gradient(135deg,#667eea,#764ba2);
+      --card-bg: #ffffff;
+      --muted: #6b7280;
+      --accent: #4f46e5;
+      --page-padding: 24px;
+    }
+    [data-theme="dark"]{
+      --card-bg: #0f1724;
+      --muted: #9ca3af;
+      background-color: #071029;
+      color: #e6eef8;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: var(--bg-1);
+      color: #0f1724;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+    nav{
+      background:rgba(255,255,255,0.9);
+      backdrop-filter: blur(6px);
+      padding:12px calc(var(--page-padding) * 2);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    [data-theme="dark"] nav{background:rgba(7,18,41,0.6)}
+    .brand{font-weight:700;color:var(--accent);font-size:20px}
+    .links a{margin:0 12px;text-decoration:none;color:inherit;font-weight:600}
+    .links a:focus{outline:2px solid var(--accent);outline-offset:2px}
+    .container{width:100%;max-width:1100px;margin:28px auto;padding:0 var(--page-padding);}
+    .header-row{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-bottom:18px}
+    .controls{display:flex;gap:8px;align-items:center}
+    .search{padding:10px 12px;border-radius:10px;border:1px solid rgba(15,23,36,0.08);min-width:220px}
+    .toggle-btn{background:var(--card-bg);border:1px solid rgba(15,23,36,0.06);padding:8px 10px;border-radius:8px;cursor:pointer}
+    .sections{display:grid;gap:18px}
+    .section{background:rgba(255,255,255,0.9);padding:14px;border-radius:12px}
+    [data-theme="dark"] .section{background:var(--card-bg)}
+    .section h2{color:var(--accent);margin:0 0 12px;font-size:18px}
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+    .project-card{background:var(--card-bg);padding:14px;border-radius:10px;display:flex;align-items:center;justify-content:flex-start;gap:10px;cursor:pointer;border:1px solid rgba(15,23,36,0.06);transition:transform .15s,box-shadow .15s}
+    .project-card:focus{outline:3px solid rgba(79,70,229,0.18)}
+    .project-card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(12,20,40,0.08)}
+    .project-card h4{margin:0;font-size:14px;color:inherit}
+    .muted{color:var(--muted);font-size:13px}
+    footer{margin-top:auto;padding:18px;background:rgba(255,255,255,0.9);text-align:center;color:var(--muted)}
+    .modal-overlay{position:fixed;inset:0;background:rgba(2,6,23,0.6);display:none;align-items:center;justify-content:center;padding:20px;z-index:60}
+    .modal-overlay[open]{display:flex}
+    .modal{background:var(--card-bg);max-width:820px;width:100%;border-radius:12px;padding:18px;box-shadow:0 20px 50px rgba(2,6,23,0.4);color:inherit}
+    [data-theme="dark"] .modal{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+    .modal-header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .modal h3{margin:0;font-size:18px;color:var(--accent)}
+    .modal .close-btn{background:transparent;border:0;font-size:16px;cursor:pointer;padding:6px}
+    .modal .content{margin-top:12px;color:var(--muted);font-size:14px}
+    .modal .instructions{margin-top:12px}
+    .modal .instructions li{margin:8px 0}
+    @media (max-width:640px){
+      nav{padding:10px 14px}
+      .header-row{flex-direction:column;align-items:stretch}
+      .controls{justify-content:space-between}
+    }
+  </style>
+</head>
+<body>
+  <nav role="navigation" aria-label="Main">
+    <div class="brand">Quick Quiz</div>
+    <div class="links" aria-hidden="false">
+      <a href="indexx.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="quizz.html">Quizzes</a>
+      <a href="projects.html">Projects</a>
+
+<a href="dashboard.html">Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="header-row">
+      <div>
+        <h1 style="margin:0;font-size:20px">Project Ideas</h1>
+        <p class="muted" style="margin:6px 0 0">Explore sample projects by technology and filter in real time.</p>
+      </div>
+      <div class="controls" role="region" aria-label="Controls">
+        <input id="search" class="search" type="search" placeholder="Search projects or categories" aria-label="Search projects">
+        <button id="themeToggle" class="toggle-btn" aria-pressed="false">Toggle Theme</button>
+      </div>
+    </div>
+
+    <div class="sections" id="sections">
+      <section class="section" data-category="HTML">
+        <h2>HTML Projects</h2>
+        <div class="projects-grid">
+          <button class="project-card" data-tags="portfolio website">
+            <h4>Portfolio Website</h4>
+          </button>
+          <button class="project-card" data-tags="restaurant menu">
+            <h4>Restaurant Menu Page</h4>
+          </button>
+          <button class="project-card" data-tags="form registration">
+            <h4>Event Registration Form</h4>
+          </button>
+          <button class="project-card" data-tags="blog layout">
+            <h4>Blog Page Layout</h4>
+          </button>
+          <button class="project-card" data-tags="resume builder">
+            <h4>Resume Builder</h4>
+          </button>
+          <button class="project-card" data-tags="photo gallery">
+            <h4>Photo Gallery</h4>
+          </button>
+          <button class="project-card" data-tags="music playlist">
+            <h4>Music Playlist Page</h4>
+          </button>
+          <button class="project-card" data-tags="feedback form">
+            <h4>Feedback Form</h4>
+          </button>
+          <button class="project-card" data-tags="ecommerce product">
+            <h4>Online Shop Product Page</h4>
+          </button>
+          <button class="project-card" data-tags="travel landing">
+            <h4>Travel Landing Page</h4>
+          </button>
+        </div>
+      </section>
+
+      <section class="section" data-category="CSS">
+        <h2>CSS Projects</h2>
+        <div class="projects-grid">
+          <button class="project-card" data-tags="navigation animated">
+            <h4>Animated Navigation Bar</h4>
+          </button>
+          <button class="project-card" data-tags="responsive grid">
+            <h4>Responsive Grid Layout</h4>
+          </button>
+          <button class="project-card" data-tags="theme toggle">
+            <h4>Dark/Light Theme Toggle</h4>
+          </button>
+          <button class="project-card" data-tags="login ui">
+            <h4>Login Page UI</h4>
+          </button>
+          <button class="project-card" data-tags="pricing interactive">
+            <h4>Interactive Pricing Table</h4>
+          </button>
+          <button class="project-card" data-tags="hover effects">
+            <h4>Image Hover Effects</h4>
+          </button>
+          <button class="project-card" data-tags="footer responsive">
+            <h4>Responsive Footer</h4>
+          </button>
+          <button class="project-card" data-tags="controls custom">
+            <h4>Custom Checkbox/Radio</h4>
+          </button>
+          <button class="project-card" data-tags="timeline design">
+            <h4>Timeline Design</h4>
+          </button>
+          <button class="project-card" data-tags="loader animated">
+            <h4>Animated Loader</h4>
+          </button>
+        </div>
+      </section>
+
+<section class="section" data-category="JavaScript">
+        <h2>JavaScript Projects</h2>
+        <div class="projects-grid">
+          <button class="project-card" data-tags="calculator app math">
+            <h4>Calculator App</h4>
+          </button>
+          <button class="project-card" data-tags="todo list storage">
+            <h4>To-Do List</h4>
+          </button>
+          <button class="project-card" data-tags="quiz game">
+            <h4>Quiz Game</h4>
+          </button>
+          <button class="project-card" data-tags="weather api">
+            <h4>Weather App</h4>
+          </button>
+          <button class="project-card" data-tags="timer stopwatch">
+            <h4>Stopwatch/Timer</h4>
+          </button>
+          <button class="project-card" data-tags="slider images">
+            <h4>Image Slider</h4>
+          </button>
+          <button class="project-card" data-tags="password generator">
+            <h4>Password Generator</h4>
+          </button>
+          <button class="project-card" data-tags="currency converter">
+            <h4>Currency Converter</h4>
+          </button>
+          <button class="project-card" data-tags="rps game">
+            <h4>Rock Paper Scissors</h4>
+          </button>
+          <button class="project-card" data-tags="typing test">
+            <h4>Typing Speed Test</h4>
+          </button>
+        </div>
+      </section>
+
+      <section class="section" data-category="Databases">
+        <h2>Database & Backend Projects</h2>
+        <div class="projects-grid">
+          <button class="project-card" data-tags="auth user mongodb">
+            <h4>User Authentication System</h4>
+          </button>
+          <button class="project-card" data-tags="blog cms mongodb">
+            <h4>Blog CMS</h4>
+          </button>
+          <button class="project-card" data-tags="inventory mongodb">
+            <h4>Inventory Management</h4>
+          </button>
+          <button class="project-card" data-tags="chat realtime mongodb">
+            <h4>Chat Application</h4>
+          </button>
+          <button class="project-card" data-tags="task manager">
+            <h4>Task Manager</h4>
+          </button>
+          <button class="project-card" data-tags="polling api">
+            <h4>Online Polling System</h4>
+          </button>
+          <button class="project-card" data-tags="ecommerce backend">
+            <h4>E-Commerce Backend</h4>
+          </button>
+          <button class="project-card" data-tags="library management">
+            <h4>Library Management</h4>
+          </button>
+          <button class="project-card" data-tags="food delivery api">
+            <h4>Food Delivery API</h4>
+          </button>
+          <button class="project-card" data-tags="jobs portal">
+            <h4>Job Portal Database</h4>
+          </button>
+        </div>
+      </section>
+
+      <section class="section" data-category="Other">
+        <h2>Other Projects</h2>
+        <div class="projects-grid">
+          <button class="project-card" data-tags="student records mysql">
+            <h4>Student Record System</h4>
+          </button>
+          <button class="project-card" data-tags="hospital management mysql">
+            <h4>Hospital Management</h4>
+          </button>
+          <button class="project-card" data-tags="banking system mysql">
+            <h4>Banking System</h4>
+          </button>
+          <button class="project-card" data-tags="airline reservation mysql">
+            <h4>Airline Reservation</h4>
+          </button>
+          <button class="project-card" data-tags="hotel booking mysql">
+            <h4>Hotel Booking System</h4>
+          </button>
+          <button class="project-card" data-tags="movie booking java">
+            <h4>Movie Ticket Booking</h4>
+          </button>
+          <button class="project-card" data-tags="atm java">
+            <h4>Bank ATM Simulation</h4>
+          </button>
+          <button class="project-card" data-tags="reservation java">
+            <h4>Hotel Reservation System</h4>
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+<footer>
+    © 2024 QuickQuiz. All rights reserved.
+  </footer>
+
+  <script>
+    (function(){
+      const search = document.getElementById('search');
+      const sections = Array.from(document.querySelectorAll('.section'));
+      const themeToggle = document.getElementById('themeToggle');
+      const body = document.documentElement;
+
+      function filter(value){
+        const q = value.trim().toLowerCase();
+        sections.forEach(section=>{
+          const cards = Array.from(section.querySelectorAll('.project-card'));
+          let anyVisible = false;
+          cards.forEach(card=>{
+            const tags = (card.getAttribute('data-tags') + card.textContent).toLowerCase();
+            const match = q === '' || tags.indexOf(q) !== -1 || section.getAttribute('data-category').toLowerCase().indexOf(q)!==-1;
+            card.style.display = match ? '' : 'none';
+            if(match) anyVisible = true;
+          });
+          section.style.display = anyVisible ? '' : 'none';
+        });
+      }
+
+      search.addEventListener('input', e=>filter(e.target.value));
+
+      themeToggle.addEventListener('click', ()=>{
+        const isDark = body.getAttribute('data-theme') === 'dark';
+        if(isDark){
+          body.removeAttribute('data-theme');
+          themeToggle.setAttribute('aria-pressed','false');
+        } else {
+          body.setAttribute('data-theme','dark');
+          themeToggle.setAttribute('aria-pressed','true');
+        }
+      });
+
+      document.addEventListener('keydown', e=>{
+        if(e.key === 'Enter' && document.activeElement.classList.contains('project-card')){
+          document.activeElement.click();
+        }
+      });
+
+      
+      const modalOverlay = document.createElement('div');
+      modalOverlay.className = 'modal-overlay';
+      modalOverlay.setAttribute('role','dialog');
+      modalOverlay.setAttribute('aria-modal','true');
+      modalOverlay.innerHTML = `
+        <div class="modal" role="document" aria-labelledby="modal-title">
+          <div class="modal-header">
+            <h3 id="modal-title"></h3>
+            <button class="close-btn" aria-label="Close details">✕</button>
+          </div>
+          <div class="content">
+            <p id="modal-summary"></p>
+            <h4 style="margin-top:12px">Getting started</h4>
+            <ol id="modal-instructions" class="instructions"></ol>
+          </div>
+        </div>`;
+      document.body.appendChild(modalOverlay);
+
+      const modalTitle = modalOverlay.querySelector('#modal-title');
+      const modalSummary = modalOverlay.querySelector('#modal-summary');
+      const modalInstructions = modalOverlay.querySelector('#modal-instructions');
+      const modalClose = modalOverlay.querySelector('.close-btn');
+      let lastFocused = null;
+
+      const details = {
+        'Portfolio Website':{
+          summary: 'A personal portfolio demonstrating your skills, projects and contact information.',
+          instructions: [
+            'Sketch the layout (header, about, projects, contact).',
+            'Create semantic HTML and responsive CSS.',
+            'Add accessible navigation and contact form.',
+            'Optimize images and test on mobile devices.'
+          ]
+        },
+        'Quiz Game':{
+          summary: 'An interactive quiz that presents questions, scores the user and shows results.',
+          instructions: [
+            'Design the question format and scoring rules.',
+            'Implement state management for questions and answers.',
+            'Add timer/feedback and persist high scores if desired.',
+            'Test with varied question sets and edge cases.'
+          ]
+        },
+        'To-Do List':{
+          summary: 'A straightforward task manager that lets users create, complete, and remove tasks.',
+          instructions: [
+            'Create the UI with an input and list container.',
+            'Implement add/edit/delete and mark-as-done functionality.',
+            'Persist tasks using localStorage or a backend.',
+            'Add UX polish (animations, empty states, keyboard support).'
+          ]
+        },
+
+'Weather App':{
+          summary: 'Fetch and display weather data for a location using a public API.',
+          instructions: [
+            'Choose a weather API and get an API key.',
+            'Create a UI for search and forecast display.',
+            'Fetch data, handle loading states and errors.',
+            'Cache recent searches and test different locations.'
+          ]
+        },
+        'User Authentication System':{
+          summary: 'A backend system that allows users to register, log in, and manage sessions securely.',
+          instructions: [
+            'Design user model and choose a database (MongoDB recommended).',
+            'Implement secure password hashing and validation.',
+            'Create endpoints for register, login and logout.',
+            'Protect routes and add basic rate-limiting and input validation.'
+          ]
+        },
+        'E-Commerce Backend':{
+          summary: 'Backend APIs that power an online shop: products, cart, orders and payments.',
+          instructions: [
+            'Model products, users and orders in your database.',
+            'Create RESTful endpoints for product listing and order placement.',
+            'Integrate a payment provider sandbox for testing.',
+            'Add authentication, authorization and input validation.'
+          ]
+        }
+      };
+
+      function openModal(title, category, tags){
+        lastFocused = document.activeElement;
+        const info = details[title] || null;
+        modalTitle.textContent = title;
+        if(info){
+          modalSummary.textContent = info.summary;
+          modalInstructions.innerHTML = info.instructions.map(i => `<li>${i}</li>`).join('');
+        } else {
+          modalSummary.textContent = `This ${category} project explores the idea of "${title}". Below are suggested steps to get started.`;
+          const steps = [
+            `Plan the features and layout for your ${title}.`,
+            'Set up a project structure and create core UI components.',
+            'Implement interactivity and any necessary backend or APIs.',
+            'Test across devices and add finishing touches (accessibility, performance).'
+          ];
+          modalInstructions.innerHTML = steps.map(i => `<li>${i}</li>`).join('');
+        }
+        modalOverlay.setAttribute('open','');
+        modalClose.focus();
+      }
+
+      function closeModal(){
+        modalOverlay.removeAttribute('open');
+        if(lastFocused) lastFocused.focus();
+      }
+
+      modalClose.addEventListener('click', closeModal);
+      modalOverlay.addEventListener('click', (e)=>{ if(e.target === modalOverlay) closeModal(); });
+      document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
+
+      document.querySelectorAll('.project-card').forEach(card=>{
+        card.addEventListener('click', ()=>{
+          const title = card.textContent.trim();
+          const section = card.closest('.section');
+          const category = section ? section.getAttribute('data-category') : 'Project';
+          openModal(title, category, card.getAttribute('data-tags'));
+        });
+        card.setAttribute('tabindex','0');
+      });
+    })();
+  </script>
+</body>
+</html>

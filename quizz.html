@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Quiz</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      display: flex;
+      position: sticky;
+      top: 0;
+      flex-direction: column;
+      min-height: 100vh;
+      background: url("pictures/digital-art-board-games-puzzles-white-wallpaper-preview.jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+    main {
+      flex: 1;
+    }
+    .intro {
+      text-align: center;
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      color: white;
+      font-size: larger;
+    }
+    .intro h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+    .intro p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    nav {
+      background: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .brand {
+      font-size: 22px;
+      font-weight: bold;
+      color: #4f46e5;
+    }
+    nav .links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav .links a:hover {
+      color: #4f46e5;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 30px;
+    }
+    .card {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+    h2 {
+      color: #4f46e5;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #4338ca;
+    }
+    #quizSection {
+      max-width: 60%;
+      margin: 20px auto;
+      background: #fff;
+      padding: 45px;
+      border-radius: 12px;
+      min-height: 40vh;
+    }
+    #optionsContainer button {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      background: #e5e7eb;
+      color: #333;
+    }
+    #optionsContainer button:hover {
+      background: #d1d5db;
+    }
+    .selected {
+      background: #4f46e5 !important;
+      color: white !important;
+    }
+    #quizResult {
+      text-align: center;
+      margin-top: 20px;
+    }
+    canvas {
+      margin-top: 15px;
+    }
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">Quick Quiz</div>
+    <div class="links">
+      <a href="indexx.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="quizz.html">Quizzes</a>
+      <a href="projects.html">Projects</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+  </nav>
+
+  <div class="intro">
+    <h1>Choose Your Quiz Mode</h1>
+    <p>
+      Test your knowledge in two ways! Create your own quiz manually by adding custom questions, 
+      or take a quick course-based quiz to practice subjects like HTML, CSS, or JavaScript. 
+      Track your scores over multiple attempts with the progress chart.
+    </p>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="card">
+        <h2>Manual Quiz</h2>
+        <label for="manualType">Choose Question Type:</label>
+        <select id="manualType">
+          <option value="mcq">Multiple Choice</option>
+          <option value="fill">Fill in the Blank</option>
+          <option value="tf">True / False</option>
+        </select>
+        <label for="manualQuestion">Enter Question:</label>
+        <input type="text" id="manualQuestion" placeholder="Enter Question">
+        <label for="manualOptions">Enter Options (comma separated):</label>
+        <input type="text" id="manualOptions" placeholder="Options (comma separated)">
+        <label for="manualAnswer">Enter Correct Answer:</label>
+        <input type="text" id="manualAnswer" placeholder="Correct Answer">
+        <button id="addManualBtn">Add Question</button>
+        <button id="startManualBtn">Start Manual Quiz</button>
+      </div>
+
+      <div class="card">
+        <h2>Course Quiz</h2>
+        <label for="courseSelect">Choose Course:</label>
+        <select id="courseSelect">
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>JS</option>
+          <option>MongoDB</option>
+          <option>MySQL</option>
+          <option>Java</option>
+        </select>
+        <label for="questionCount">Number of Questions (1-10):</label>
+        <input type="number" id="questionCount" min="1" max="10" value="5">
+        <label for="timerInput">Time per Question (in seconds):</label>
+        <input type="number" id="timerInput" min="5" value="30">
+        <button id="startCourseBtn">Start Course Quiz</button>
+      </div>
+    </div>
+
+    <div id="quizSection" style="display:none;">
+      <h2 id="quizTitle">Quiz</h2>
+      <div id="questionContainer"></div>
+      <div>Time Left: <span id="timeLeft"></span>s</div>
+      <div id="optionsContainer"></div>
+      <button id="nextBtn" style="display:none;">Next</button>
+      <div id="quizResult" style="display:none;">
+        <p>Your Score: <span id="score"></span></p>
+        <canvas id="progressChart"></canvas>
+        <button id="backBtn">Back</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2024 QuickQuiz. All rights reserved.
+  </footer>
+
+<script>
+  const API_BASE = 'https://team-15-a1.onrender.com';
+
+async function fetchQuestionsFromServer(course, count) {
+  const url = `${API_BASE}/api/questions?course=${encodeURIComponent(course)}&limit=${count}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error('Failed to fetch questions');
+  return res.json();
+}
+
+async function postAttemptToServer(userId, course, score, total) {
+  try {
+    await fetch(`${API_BASE}/api/attempts`, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ userId, course, score, total })
+    });
+  } catch (e) {
+    console.warn('Attempt not saved to server', e);
+  }
+}
+
+const questionBank = {
+  HTML:[
+    {type:'mcq',question:'Which tag creates a hyperlink?',options:['<a>','<link>','<href>'],answer:'<a>'},
+    {type:'mcq',question:'Which tag is used for largest heading?',options:['<h1>','<h6>','<heading>'],answer:'<h1>'},
+    {type:'fill',question:'HTML stands for ______.',answer:'HyperText Markup Language'},
+    {type:'tf',question:'<br> is used for line break.',answer:'True'},
+    {type:'mcq',question:'Which attribute specifies image source?',options:['src','href','link'],answer:'src'}
+  ],
+  CSS:[
+    {type:'mcq',question:'Which property changes text color?',options:['color','text-color','font-color'],answer:'color'},
+    {type:'fill',question:'CSS stands for ______.',answer:'Cascading Style Sheets'},
+    {type:'tf',question:'Inline styles override external styles.',answer:'True'},
+    {type:'mcq',question:'Which property controls font size?',options:['size','font-size','text-size'],answer:'font-size'},
+    {type:'mcq',question:'Which symbol is used for id selector?',options:['.','#','%'],answer:'#'}
+  ],
+  JS:[
+    {type:'mcq',question:'Which keyword declares a variable?',options:['var','let','const'],answer:'var'},
+    {type:'fill',question:'JS stands for ______.',answer:'JavaScript'},
+    {type:'tf',question:'Java and JavaScript are the same.',answer:'False'},
+    {type:'mcq',question:'Which function shows an alert?',options:['alert()','msg()','popup()'],answer:'alert()'},
+    {type:'mcq',question:'Which symbol is used for comments?',options:['//','/*','--'],answer:'//'}
+  ]
+};
+let manualQuestions=[];
+let currentQuiz=[];
+let currentIndex=0;
+let score=0;
+let timer;
+let timePerQuestion=30;
+let selectedAnswer='';
+let progressData=[];
+const quizSection=document.getElementById('quizSection');
+const questionContainer=document.getElementById('questionContainer');
+const optionsContainer=document.getElementById('optionsContainer');
+const timeLeftDisplay=document.getElementById('timeLeft');
+const nextBtn=document.getElementById('nextBtn');
+const quizResult=document.getElementById('quizResult');
+const scoreDisplay=document.getElementById('score');
+const ctx=document.getElementById('progressChart').getContext('2d');
+let chart=new Chart(ctx,{type:'line',data:{labels:[],datasets:[{label:'Scores',data:[],borderColor:'#4f46e5'}]},options:{responsive:true}});
+document.getElementById('addManualBtn').onclick=()=>{
+  const type=document.getElementById('manualType').value;
+  const question=document.getElementById('manualQuestion').value;
+  const options=document.getElementById('manualOptions').value.split(',');
+  const answer=document.getElementById('manualAnswer').value;
+  if(!question||!answer)return;
+  manualQuestions.push({type,question,options,answer});
+  document.getElementById('manualQuestion').value='';
+  document.getElementById('manualOptions').value='';
+  document.getElementById('manualAnswer').value='';
+  alert('Question Added');
+};
+document.getElementById('startManualBtn').onclick=()=>{
+  if(manualQuestions.length===0){alert('Add questions first');return;}
+  currentQuiz=[...manualQuestions];
+  startQuiz();
+};
+
+document.getElementById('startCourseBtn').onclick = async () => {
+  const course = document.getElementById('courseSelect').value;
+  const count = Math.max(1, Math.min(10, parseInt(document.getElementById('questionCount').value) || 5));
+  timePerQuestion = parseInt(document.getElementById('timerInput').value) || 30;
+  try {
+    const serverQs = await fetchQuestionsFromServer(course, count);
+    if (!serverQs || serverQs.length === 0) {
+      alert('No questions available for this course.');
+      return;
+    }
+    currentQuiz = serverQs.map(q => ({
+      type: q.type || 'mcq',
+      question: q.question,
+      options: q.options || q.choices || [],
+      answer: q.answer
+    }));
+    startQuiz();
+  } catch (err) {
+    alert('Could not load quiz: ' + err.message);
+  }
+};
+
+
+document.getElementById('nextBtn').onclick=()=>{currentIndex++;if(currentIndex<currentQuiz.length){showQuestion();}else{showResult();}};
+document.getElementById('backBtn').onclick=()=>{quizSection.style.display='none';quizResult.style.display='none';document.querySelector('.container').style.display='flex';};
+function startQuiz(){
+  document.querySelector('.container').style.display='none';
+  quizSection.style.display='block';
+  quizResult.style.display='none';
+  currentIndex=0;score=0;showQuestion();
+}
+function showQuestion(){
+  clearInterval(timer);
+  selectedAnswer='';
+  nextBtn.style.display='none';
+  const q=currentQuiz[currentIndex];
+  questionContainer.textContent=q.question;
+  optionsContainer.innerHTML='';
+  if(q.type==='mcq'){
+    q.options.forEach(opt=>{
+      const btn=document.createElement('button');
+      btn.textContent=opt;
+      btn.onclick=()=>selectAnswer(opt,btn);
+      optionsContainer.appendChild(btn);
+    });
+  }else if(q.type==='fill'){
+    const input=document.createElement('input');
+    input.type='text';
+    input.oninput=(e)=>selectedAnswer=e.target.value;
+    optionsContainer.appendChild(input);
+    const submit=document.createElement('button');
+    submit.textContent='Submit';
+    submit.onclick=checkAnswer;
+    optionsContainer.appendChild(submit);
+  }else if(q.type==='tf'){
+    ['True','False'].forEach(opt=>{
+      const btn=document.createElement('button');
+      btn.textContent=opt;
+      btn.onclick=()=>selectAnswer(opt,btn);
+      optionsContainer.appendChild(btn);
+    });
+  }
+  let timeLeft=timePerQuestion;
+  timeLeftDisplay.textContent=timeLeft;
+  timer=setInterval(()=>{
+    timeLeft--;
+    timeLeftDisplay.textContent=timeLeft;
+    if(timeLeft<=0){clearInterval(timer);checkAnswer();}
+  },1000);
+}
+function selectAnswer(opt,btn){
+  selectedAnswer=opt;
+  Array.from(optionsContainer.children).forEach(c=>c.classList.remove('selected'));
+  btn.classList.add('selected');
+  clearInterval(timer);
+  checkAnswer();
+}
+function checkAnswer(){
+  const q=currentQuiz[currentIndex];
+  if((q.type==='mcq'||q.type==='tf')&&selectedAnswer===q.answer)score++;
+  if(q.type==='fill'&&selectedAnswer.trim().toLowerCase()===q.answer.toLowerCase())score++;
+  nextBtn.style.display='block';
+}
+
+function showResult(){
+  quizResult.style.display='block';
+  scoreDisplay.textContent = score;
+  const total = currentQuiz.length || 0;
+  const percent = total ? Math.round((score / total) * 100) : 0;
+  const local = JSON.parse(localStorage.getItem('quizScores') || '[]');
+  local.push(percent);
+  localStorage.setItem('quizScores', JSON.stringify(local));
+  try {
+    const profile = JSON.parse(localStorage.getItem('profile') || '{}');
+    const userId = profile.email || null;
+    postAttemptToServer(userId, document.getElementById('courseSelect')?.value || 'Manual', score, total);
+  } catch(e) { console.warn(e); }
+  progressData.push(score);
+  chart.data.labels = progressData.map((_,i)=>'Attempt '+(i+1));
+  chart.data.datasets[0].data = progressData;
+  chart.update();
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Quick Quiz</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: url("pictures/close-up-puzzle-background_23-2149289227 (1).jpg") no-repeat center center fixed;
+      background-size: cover;
+    }
+    nav {
+      background: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .brand {
+      font-size: 22px;
+      font-weight: bold;
+       color: #4f46e5;
+    }
+    nav .links a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4b5563;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    nav .links a:hover {
+      color: #4f46e5;
+    }
+    main {
+      flex: 1;
+      padding: 30px;
+    }
+    .course-section {
+      background: white;
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 12px;
+    }
+    h2 {
+      color: #4f46e5;
+      margin-bottom: 15px;
+    }
+    h3 {
+      margin-top: 20px;
+      color: #333;
+    }
+    pre {
+      background: #f3f4f6;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    footer {
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav>
+    <div class="brand">Quick Quiz</div>
+    <div class="links">
+      <a href="indexx.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="quizz.html">Quizzes</a>
+      <a href="projects.html">Projects</a>
+      <a href="dashboard.html">Dashboard</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="course-section">
+      <h2>HTML (HyperText Markup Language)</h2>
+      <p>HTML is the foundation of all web pages. It structures the content using elements (tags). Every website you see is built with HTML at its core.</p>
+      <h3>Core Concepts</h3>
+      <ul>
+        <li>HTML uses tags like <code>&lt;h1&gt;, &lt;p&gt;, &lt;div&gt;</code> to structure content.</li>
+        <li>Attributes like <code>id</code>, <code>class</code>, <code>src</code>, and <code>href</code> add functionality.</li>
+        <li>Forms allow user input with <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, etc.</li>
+      </ul>
+      <h3>Example</h3>
+     <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome to HTML&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+
+      <h3>Why Learn HTML?</h3>
+      <p>Without HTML, no web page can exist. It is the skeleton of the web.</p>
+    </div>
+
+    <div class="course-section">
+      <h2>CSS (Cascading Style Sheets)</h2>
+      <p>CSS controls the design and layout of web pages. It makes websites attractive, responsive, and user-friendly.</p>
+      <h3>Core Concepts</h3>
+      <ul>
+        <li>Selectors (<code>.class</code>, <code>#id</code>, <code>tag</code>) target HTML elements.</li>
+        <li>Properties like <code>color</code>, <code>margin</code>, <code>padding</code>, <code>font-size</code>.</li>
+        <li>Responsive design using media queries (<code>@media</code>).</li>
+      </ul>
+      <h3>Example</h3>
+      <pre>
+body {
+  background-color: lightblue;
+  font-family: Arial;
+}
+h1 {
+  color: darkblue;
+}
+      </pre>
+      <h3>Why Learn CSS?</h3>
+      <p>CSS allows websites to look modern, professional, and adapt to different screen sizes.</p>
+    </div>
+
+    <div class="course-section">
+      <h2>JavaScript (JS)</h2>
+      <p>JavaScript makes web pages interactive. It can update content dynamically, handle user inputs, and control multimedia.</p>
+      <h3>Core Concepts</h3>
+      <ul>
+        <li>Variables (<code>var</code>, <code>let</code>, <code>const</code>).</li>
+        <li>Functions to reuse code.</li>
+        <li>DOM Manipulation (<code>document.getElementById</code>, <code>addEventListener</code>).</li>
+      </ul>
+      <h3>Example</h3>
+      <pre>
+&lt;button onclick="sayHello()"&gt;Click Me&lt;/button&gt;
+
+&lt;script&gt;
+function sayHello() {
+  alert("Hello, JavaScript!");
+}
+&lt;/script&gt;
+      </pre>
+      <h3>Why Learn JavaScript?</h3>
+      <p>JavaScript is the backbone of interactive web applications and is used in almost every website today.</p>
+    </div>
+
+    <div class="course-section">
+      <h2>MongoDB</h2>
+      <p>MongoDB is a NoSQL database that stores data as JSON-like documents. It is highly scalable and flexible.</p>
+      <h3>Core Concepts</h3>
+      <ul>
+        <li>Collections (like tables in SQL).</li>
+        <li>Documents (like rows in SQL, but stored as JSON).</li>
+        <li>CRUD Operations: Create, Read, Update, Delete.</li>
+      </ul>
+      <h3>Example</h3>
+      <pre>
+db.students.insertOne({ name: "Alex", age: 21, course: "JS" });
+db.students.find();
+      </pre>
+      <h3>Why Learn MongoDB?</h3>
+      <p>MongoDB is widely used in modern apps, especially with Node.js, for building scalable applications.</p>
+    </div>
+
+    <div class="course-section">
+      <h2>MySQL</h2>
+      <p>MySQL is a popular relational database management system. It uses structured tables and SQL queries.</p>
+      <h3>Core Concepts</h3>
+      <ul>
+        <li>Tables consist of rows and columns.</li>
+        <li>SQL queries manage data (SELECT, INSERT, UPDATE, DELETE).</li>
+        <li>Joins combine data from multiple tables.</li>
+      </ul>
+      <h3>Example</h3>
+      <pre>
+CREATE TABLE students(
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  age INT
+);
+
+INSERT INTO students VALUES(1, 'Alex', 21);
+SELECT * FROM students;
+      </pre>
+      <h3>Why Learn MySQL?</h3>
+      <p>MySQL powers many enterprise applications, websites, and CMS platforms like WordPress.</p>
+    </div>
+
+    <div class="course-section">
+      <h2>Java</h2>
+      <p>Java is a powerful, object-oriented programming language used for building applications from mobile apps to large-scale enterprise systems.</p>
+      <h3>Core Concepts</h3>
+      <ul>
+        <li>Object-Oriented Programming (Classes, Objects, Inheritance).</li>
+        <li>Platform independence (Write Once, Run Anywhere).</li>
+        <li>Robust standard library for networking, GUI, and more.</li>
+      </ul>
+      <h3>Example</h3>
+      <pre>
+class Hello {
+  public static void main(String args[]) {
+    System.out.println("Hello, Java!");
+  }
+}
+      </pre>
+      <h3>Why Learn Java?</h3>
+      <p>Java is widely used in Android apps, banking software, and enterprise solutions due to its performance and reliability.</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2024 QuickQuiz. All rights reserved.
+  </footer>
+</body>
+</html>
